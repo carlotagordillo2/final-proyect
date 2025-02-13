@@ -114,7 +114,8 @@ Mientras, que hay productos que generan pérdidas y deben de ser descatalogados 
     - **Estudio de pagos de clientes**. El retraso de pago se ha calculado como Payment Date - Order Date 
     Podemos observar que la media de días de retraso de pago es 1.73 días. Además, en media los clientes que pagan anticipadamente gastan más que los que pagan a dias posteriores. 
 
-    **Realizado**
+        **Realizado**
+  
         - Análisis de los dias de retraso de pago
         - Análisis del tiempo de entrega
         - Análisis del número de ofertas por cliente
