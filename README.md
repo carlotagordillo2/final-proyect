@@ -62,7 +62,6 @@ The objective is to predict the demand for products in a shop to optimise invent
     - *Regular-Over the Calf* --> 43.07%, solo se han vendido un poco más de 3100
 
 Después, vemos también que: 
-
     - *Briefs* --> 28.56%, a pesar de ser nuestra categoria más vendida y que más ingresos generan no es la que más beneficios ofrece
     - Después podemos potenciar ventas de otros productos con mayor rentabilidad, puesto que se venden bastante como: *Thongs* (35.29%) y *Undershits* (35.21%)
 
@@ -115,7 +114,8 @@ Mientras, que hay productos que generan pérdidas y deben de ser descatalogados 
     - **Estudio de pagos de clientes**. El retraso de pago se ha calculado como Payment Date - Order Date 
     Podemos observar que la media de días de retraso de pago es 1.73 días. Además, en media los clientes que pagan anticipadamente gastan más que los que pagan a dias posteriores. 
 
-    **Realizado**
+        **Realizado**
+  
         - Análisis de los dias de retraso de pago
         - Análisis del tiempo de entrega
         - Análisis del número de ofertas por cliente
