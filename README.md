@@ -125,18 +125,21 @@ Mientras, que hay productos que generan pérdidas y deben de ser descatalogados 
 
 - *15/02/2025*
 
-    **Pendiente por hacer**
+    **Realizado**
 
-    - Análisis de stock
-    - Análisis de preferencia cliente
-    - Interviene el empleado??
+    - Análisis de stock --> hecho
+    - Estudio del empleado
     - Análisis de los proveedores
     - Análisis más exaustivo de los productos
+    - Tendecia de la compra de diversos productos por estación --> tipo en febrero se compran más cosas de invierno
     
-    - Crear nuevas métricas y guardar las nuevas y las existentes con idea de crear el power bi
-    - Plantear el diseño del dashboard
-    - Tendecia de la compra de diversos productos a lo largo del tiempo --> tipo en febrero se compran más cosas de invierno
-    
+
+- *18/02/2025*
+
+    **Pendiente**
+    - Análisis de preferencias
+    - series temporales
+    - power bi
 
 
 
