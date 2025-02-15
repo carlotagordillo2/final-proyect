@@ -125,7 +125,45 @@ def piechart(df, name, threshold):
         startangle=90, 
         colors=colors
     )
-    plt.xticks(rotation=55)
+    plt.xticks(rotation=45)
 
     plt.title(f'{name}')
+    plt.show()
+    
+    
+    def get_season(date):
+        
+        month = date.month
+        
+        if month in [12,1,2]:
+            return 'Winter'
+        elif month in [3,4,5]:
+            return 'Spring'
+        elif month in [6,7,8]:
+            return 'Summer'
+        else: 
+            'Automn'
+            
+
+def sold_tendecies_season(df, group, top = 10, top_figure = 10):
+    
+    season_sales = df.groupby(['Season', group])['QuantitySold'].sum().reset_index()
+    season_sales = season_sales.sort_values(by=['Season', 'QuantitySold'], ascending=[True, False])
+    print(season_sales)
+    
+    season_sales["Rank"] = season_sales.groupby("Season")["QuantitySold"].rank(method="dense", ascending=False)
+    top_sales = season_sales[season_sales["Rank"] <= top]
+
+    print(top_sales)
+    
+    top_sales_graph = season_sales.groupby("Season").apply(lambda x: x.nlargest(top_figure, "QuantitySold")).reset_index(drop=True)
+
+    plt.figure(figsize=(12,6))
+    sns.barplot(data=top_sales_graph, x="Season", y="QuantitySold", hue=group)
+
+    plt.xlabel("Season")
+    plt.ylabel("Quantity Sold")
+    plt.title("Top 10 best-selling products by season")
+    plt.legend(title="Product", bbox_to_anchor=(1,1))
+
     plt.show()
