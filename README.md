@@ -136,10 +136,13 @@ Mientras, que hay productos que generan pérdidas y deben de ser descatalogados 
 
 - *18/02/2025*
 
-    **Pendiente**
-    - Análisis de preferencias
     - series temporales
-    - power bi
+        - ventas totales
+        - por categoria
+        - stock
+
+
+-
 
 
 
@@ -152,8 +155,8 @@ Mientras, que hay productos que generan pérdidas y deben de ser descatalogados 
 | Tuesday | Thursday | Saturday |
 |-----------|-----------|-----------|
 | 4 - Incio  | 6 - Búsqueda dataset  | 8 - Limpieza   |
-| 11 - EDA   | 13 - EDA   | 15 -    |
-| 18 -   | 20 -   | 22 -   |
+| 11 - EDA   | 13 - EDA   | 15 - EDA    |
+| 18 - Forecast  | 20 - Forecast | 22 - Forecast |
 | 25 -   | 27 -   | 1 -   |
 | 4 -   | 6 -   | 8 -   |
 | 11 - **Presentacion**  | 13 - **Presentacion**  | 15 - **Presentacion**  |
