@@ -95,6 +95,37 @@ Mientras, que hay productos que generan pérdidas y deben de ser descatalogados 
 
 - Popular payment method : *Cash*
 
+
+## Forecasting
+
+### Total sales forecasting
+
+Predict total sales group by week. 
+Process: 
+    1. Group data by week.
+    2. Substitute outliers by median.
+    3. Check for normality and apply Box-Cox
+    4. Time series descomposition.
+    5. Series Stationarity test. 
+    6. Autocorrelation plots for original and differential series
+    7. Apply models:
+        7.1 Auto arima -> bad result
+        7.2 Sarimax
+    8. Residuals study
+    
+
+| Models | AIC | BIC | HQIC | Log Likelihood |
+|-----------|-----------|-----------|-----------|-----------|
+|  **SARIMAX** | 627.366  | 637.944 | 631.651 | -309.683 |
+|  **ARIMA** | 631.015 | 646.823 | 637.418 | -309.507 |
+|  **Prophet** | 153.00211 | 164.909 |  |  |
+
+Best model: **Prophet**
+
+![Prophet predictions](ML/prophet_predictions.png)
+
+
+
 ## Process
 
 ### 1. Cleaning
@@ -134,6 +165,7 @@ Mientras, que hay productos que generan pérdidas y deben de ser descatalogados 
     - Tendecia de la compra de diversos productos por estación --> tipo en febrero se compran más cosas de invierno
     
 
+### 3. Forecasting
 - *18/02/2025*
 
     - series temporales
@@ -142,12 +174,16 @@ Mientras, que hay productos que generan pérdidas y deben de ser descatalogados 
         - stock
 
 
--
+- *22/02/2025*
+
+    - series temporales de las ventas totales con distintos metodos
+
+
+### 4. Visualization
 
 
 
 
-### 3. Visualization
 
 
 ## Time Line
@@ -157,7 +193,7 @@ Mientras, que hay productos que generan pérdidas y deben de ser descatalogados 
 | 4 - Incio  | 6 - Búsqueda dataset  | 8 - Limpieza   |
 | 11 - EDA   | 13 - EDA   | 15 - EDA    |
 | 18 - Forecast  | 20 - Forecast | 22 - Forecast |
-| 25 -   | 27 -   | 1 -   |
+| 25 - Forecast  | 27 -   | 1 -   |
 | 4 -   | 6 -   | 8 -   |
 | 11 - **Presentacion**  | 13 - **Presentacion**  | 15 - **Presentacion**  |
 
