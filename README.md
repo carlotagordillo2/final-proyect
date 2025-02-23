@@ -124,6 +124,29 @@ Best model: **Prophet**
 
 ![Prophet predictions](ML/prophet_predictions.png)
 
+### Desagregate forecasting
+
+
+    - **Classification ABC**
+
+        The ABC criterion is based on the contribution of each product to total revenues:
+
+        - Class A: Represent 60% of revenues.
+        - Class B: Represent 30% of revenues.
+        - Class C: Represent the remaining 10%.
+
+    - **According to the demand**
+
+        Now that we have the ABC classification, we will categorise the products according to their demand: **high or low**. 
+
+        Products with less than 10 units (*median*) of monthly demand or with more than 30% of months without sales will be classified as low demand.
+
+
+| Classification / Demand | A| B  | C | 
+|-----------|-----------|-----------|-----------|
+|  High Demand | 438  | 928 | 827 | 
+|Low Demand  | 11 | 497 | 1340|
+
 
 
 ## Process
@@ -177,6 +200,7 @@ Best model: **Prophet**
 - *22/02/2025*
 
     - series temporales de las ventas totales con distintos metodos
+    - series temporales desagregadas 
 
 
 ### 4. Visualization
