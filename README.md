@@ -203,6 +203,15 @@ Best model: **Prophet**
     - series temporales desagregadas 
 
 
+- *25/02/2025*
+
+    - escoger dos productos de la classification a high demand: 
+        - estudiar lead tiem de cada uno de ellos order date..
+        - hacer la prevision stock.........
+
+    
+
+
 ### 4. Visualization
 
 
