@@ -209,7 +209,15 @@ Best model: **Prophet**
         - estudiar lead tiem de cada uno de ellos order date..
         - hacer la prevision stock.........
 
-    
+- *27/02/2025*  
+
+    - sacar previsiones max/min de cada producto de las clasificaciones ABC - baja/alta demanda
+    - implementacion de las funciones para security_stock
+        - aplicadas a dos productos de high-demand-class-a, donde se ha sacado: lead_time (avg y std), trigger-point, ROP, security-stock
+
+- *01/03/2025*  
+
+    - distribucion del inventario
 
 
 ### 4. Visualization
@@ -226,7 +234,7 @@ Best model: **Prophet**
 | 4 - Incio  | 6 - Búsqueda dataset  | 8 - Limpieza   |
 | 11 - EDA   | 13 - EDA   | 15 - EDA    |
 | 18 - Forecast  | 20 - Forecast | 22 - Forecast |
-| 25 - Forecast  | 27 -   | 1 -   |
+| 25 - Forecast  | 27 - Forecast  | 1 -  Distribution in the warehouse |
 | 4 -   | 6 -   | 8 -   |
 | 11 - **Presentacion**  | 13 - **Presentacion**  | 15 - **Presentacion**  |
 

@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy.stats import boxcox, norm, ks_2samp
 from scipy.stats import shapiro, ks_2samp
-from scipy.stats import norm
+from scipy.stats import poisson, expon, ks_2samp
 import statsmodels.api as sm
 from statsmodels.tsa.seasonal import seasonal_decompose
 
@@ -199,42 +199,60 @@ def normality_study(sales):
         
     return sales
 
-def security_stock(sales, lead_time_avg, lead_time_std):
+def security_stock(sales, lead_time_avg, lead_time_std, confidence=0.99):
     
+    # Eliminar valores negativos o nulos
+    sales = sales[sales["QuantitySold"] > 0].dropna()
+    
+    # Descomponer la demanda para extraer la estacionalidad
     descomposicion = seasonal_decompose(sales["QuantitySold"], model="additive", period=30)
     sales["SeasonalDemand"] = sales["QuantitySold"] - descomposicion.seasonal
+    
+    # Calcular media y desviación estándar
     demanda_prom = sales["SeasonalDemand"].mean()
     sigma_demanda = sales["SeasonalDemand"].std()
+    
+    # Seleccionar la mejor distribución
+    if np.all(sales["SeasonalDemand"] >= 0) and np.issubdtype(sales["SeasonalDemand"].dtype, np.integer):
+        # Comparar si Poisson se ajusta mejor que una normal
+        poisson_fit = poisson(demanda_prom)
+        ks_poisson, p_poisson = ks_2samp(sales["SeasonalDemand"], poisson_fit.rvs(len(sales)))
+        
+        if p_poisson > 0.05:  # No se rechaza la hipótesis nula de que los datos siguen Poisson
+            distribucion = "Poisson"
+            sigma_demanda = np.sqrt(demanda_prom)
+        else:
+            distribucion = "Normal"
+    else:
+        distribucion = "Exponencial"
+        sigma_demanda = demanda_prom  
 
-    # security stock
-    Z = norm.ppf(0.99)
+    # Stock de seguridad con nivel de servicio
+    Z = norm.ppf(confidence)
     sigma_LT = np.sqrt((lead_time_avg * sigma_demanda**2) + (demanda_prom**2 * lead_time_std**2))
     security_stock = Z * sigma_LT
     
-    #(ROP)
+    # Calcular punto de reorden (ROP)
     ROP = (demanda_prom * lead_time_avg) + security_stock
-    rop_por_producto = ROP
         
     # Identificar fechas de reorden
     sales["AccumulativeStock"] = ROP - sales["SeasonalDemand"].cumsum()
     sales["TriggerOrder"] = sales["AccumulativeStock"] <= security_stock
     fechas_reposicion = sales[sales["TriggerOrder"]].index
-    print(f"Reordered dates:", fechas_reposicion.to_list())
     
-    print("--------------------------------------------------------------------------\n")
-    print(f"ROP: {ROP} \n")
-    print(f"Security Stock: {security_stock} \n")
+    print(f"🔹 Reordered dates:", fechas_reposicion.to_list())
+    print(f"🔹 ROP: {ROP:.2f}")
+    print(f"🔹 Security Stock: {security_stock:.2f}")
     
-        
     # Graficar demanda y puntos de reorden
     plt.figure(figsize=(10, 4))
     plt.plot(sales.index, sales["QuantitySold"], label="Real demand")
     plt.axhline(ROP, color='r', linestyle='--', label="Reorder point")
-    plt.scatter(fechas_reposicion, [ROP] * len(fechas_reposicion), color='red', marker='o', label="Lanzar Orden")
+    plt.scatter(fechas_reposicion, [ROP] * len(fechas_reposicion), color='red', marker='o', label="Trigger order")
     plt.legend()
-    plt.title(f"Demand and Reorder Point")
+    plt.title(f"Demand and Reorder Point - {distribucion}")
     plt.grid()
     plt.show()
     
-    return rop_por_producto, security_stock, fechas_reposicion
+    return ROP, security_stock, fechas_reposicion
 
