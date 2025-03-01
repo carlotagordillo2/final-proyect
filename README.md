@@ -235,7 +235,7 @@ Best model: **Prophet**
 | 11 - EDA   | 13 - EDA   | 15 - EDA    |
 | 18 - Forecast  | 20 - Forecast | 22 - Forecast |
 | 25 - Forecast  | 27 - Forecast  | 1 -  Distribution in the warehouse |
-| 4 -   | 6 -   | 8 -   |
+| 4 -   | 6 - streamlit   | 8 - preparar presentacion  |
 | 11 - **Presentacion**  | 13 - **Presentacion**  | 15 - **Presentacion**  |
 
 ## Project Structure 📁

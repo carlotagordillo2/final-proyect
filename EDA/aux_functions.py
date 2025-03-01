@@ -142,7 +142,7 @@ def piechart(df, name, threshold):
         elif month in [6,7,8]:
             return 'Summer'
         else: 
-            'Automn'
+             return'Automn'
             
 
 def sold_tendecies_season(df, group, top = 10, top_figure = 10):
