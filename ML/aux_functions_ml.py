@@ -15,6 +15,8 @@ from sklearn.cluster import KMeans
 from collections import Counter
 import math
 from pulp import *
+from pulp import LpProblem, LpVariable, LpMinimize, lpSum, LpStatus
+import streamlit as st
 
 
 #read data
@@ -464,7 +466,17 @@ def distancia_origen(i, df, origen=(0,0)):
     
     return math.sqrt((x1 - origen[0])+ (y1-origen[1]))
 
+def mostrar_recorrido(recorrido, productos_seleccionados):
+    st.write("Optimal route for picking up products (with locations):")
 
+    for i, j in recorrido:
+        if i in productos_seleccionados.index:
+            coords_i = productos_seleccionados.loc[i, ['X', 'Y']]
+            st.write(f"Pick up {i} (Location: {coords_i['X']}, {coords_i['Y']}) → {j}")
+        elif i == "Origen":
+            st.write(f"Start from Origen → {j}")
+        else:
+            st.write(f"Product {i} not found in selected products.")
 
 
 def pickup_products(productos_a_recoger, df_slots):
@@ -557,3 +569,74 @@ def pickup_products(productos_a_recoger, df_slots):
         
     return df_slots
 
+def distancia_euclidia(i, j, productos_seleccionados):
+    if i == 'Origen' or j == 'Origen':
+        return 0
+    x_i, y_i = productos_seleccionados.loc[i, ['X', 'Y']]
+    x_j, y_j = productos_seleccionados.loc[j, ['X', 'Y']]
+    return ((x_j - x_i)**2 + (y_j - y_i)**2)**0.5
+
+def distancia_origen(i, productos_seleccionados):
+    if i == 'Origen':
+        return 0
+    x_i, y_i = productos_seleccionados.loc[i, ['X', 'Y']]
+    return (x_i**2 + y_i**2)**0.5
+
+def pickup_products(productos_a_recoger, df_slots):
+    productos_disponibles = df_slots[df_slots['ProductName'].isin(productos_a_recoger.keys())]
+
+    productos_disponibles['CantidadRecoger'] = productos_disponibles['ProductName'].apply(
+        lambda row: min(productos_a_recoger.get(row, 0), 
+                        productos_disponibles.loc[productos_disponibles['ProductName'] == row, 'Stock'].values[0])
+    )
+
+    # Actualizar stock
+    for index, row in productos_disponibles.iterrows():
+        df_slots.loc[df_slots['ProductName'] == row['ProductName'], 'Stock'] -= row['CantidadRecoger']
+
+    productos_ajustados = productos_disponibles[productos_disponibles['CantidadRecoger'] > 0]
+    
+    if productos_ajustados.empty:
+        return df_slots, productos_ajustados, [], {}
+
+    productos = ['Origen'] + productos_ajustados['ProductName'].tolist()
+    productos_seleccionados = productos_ajustados.set_index('ProductName')
+
+    # Modelo de optimización
+    prob = LpProblem("Minimizar_Ruta", LpMinimize)
+    x = LpVariable.dicts("ruta", (productos, productos), lowBound=0, upBound=1, cat='Binary')
+
+    # Función objetivo: minimizar la distancia total
+    prob += lpSum(distancia_euclidia(i, j, productos_seleccionados) * x[i][j] for i in productos for j in productos if i != j)
+
+    # Restricciones
+    for i in productos:
+        prob += lpSum(x[i][j] for j in productos if i != j) == 1  # Salida única
+    for j in productos:
+        prob += lpSum(x[i][j] for i in productos if i != j) == 1  # Entrada única
+    for i in productos:
+        for j in productos:
+            if i != j:
+                prob += x[i][j] + x[j][i] <= 1  # Evitar ciclos inversos
+
+    # Resolver
+    prob.solve()
+
+    # Construcción del recorrido
+    recorrido = []
+    visitados = set()
+    actual = "Origen"
+
+    while len(visitados) < len(productos) - 1:  # Origen no cuenta como producto
+        for j in productos:
+            if actual != j and x[actual][j].varValue == 1 and j not in visitados:
+                recorrido.append((actual, j))
+                visitados.add(actual)
+                actual = j
+                break
+
+    # Asegurar que solo el último paso lleva al origen
+    if recorrido and recorrido[-1][1] != "Origen":
+        recorrido.append((recorrido[-1][1], "Origen"))
+
+    return df_slots, productos_ajustados, recorrido, productos_seleccionados

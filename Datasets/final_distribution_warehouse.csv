@@ -32,7 +32,7 @@
 30,4157,0,30,1.0,M-BX46SE,Boxers,Men's Briefs,Underwear,70,M,Single Unit,BX46SE
 31,2114,0,31,36.0,S-BX46D,Boxers,Men's Briefs,Underwear,69,S,Single Unit,BX46D
 32,4158,0,32,10.0,XL-BX46SE,Boxers,Men's Briefs,Underwear,85,XL,Single Unit,BX46SE
-33,68,0,33,,2-BX34,Boxers,Boys' Briefs,Underwear,51,S,Single Unit,BX34
+33,68,0,33,0.0,2-BX34,Boxers,Boys' Briefs,Underwear,51,S,Single Unit,BX34
 34,69,0,34,359.0,2-BX64,Boxers,Boys' Briefs,Underwear,47,S,Single Unit,BX64
 35,4159,0,35,120.0,L-BX46KE,Boxers,Men's Briefs,Underwear,85,L,Single Unit,BX46KE
 36,4160,0,36,120.0,M-BX46KE,Boxers,Men's Briefs,Underwear,75,M,Single Unit,BX46KE
@@ -156,7 +156,7 @@
 154,668,0,154,7.0,S-BX17Y1,Boxers,Men's Briefs,Underwear,55,S,Single Unit,BX17Y1
 155,802,0,155,41.0,XL-BX61A,Boxers,Men's Briefs,Underwear,79,XL,Single Unit,BX61A
 156,3516,0,156,20.0,3-BX46KB,Boxers,Boys' Briefs,Underwear,55,M,Single Unit,BX46KB
-157,4391,0,157,,M-BX4685SA,Boxers,Men's Briefs,Underwear,80,M,Single Unit,BX4685SA
+157,4391,0,157,0.0,M-BX4685SA,Boxers,Men's Briefs,Underwear,80,M,Single Unit,BX4685SA
 158,1833,0,158,20.0,XL-BX46CA,Boxers,Men's Briefs,Underwear,102,XL,Single Unit,BX46CA
 159,4418,0,159,10.0,M-BX4668SA,Boxers,Men's Briefs,Underwear,70,M,Single Unit,BX4668SA
 160,4419,0,160,10.0,L-BX46CK,Boxers,Men's Briefs,Underwear,90,L,Single Unit,BX46CK
@@ -341,7 +341,7 @@
 339,961,39,33,102.0,XXL-PCL32S,Drawers,Women's Panties,Underwear,1095,XXL,Dozen,PCL32S
 340,962,39,34,89.0,XXL-PCL32T,Drawers,Women's Panties,Underwear,960,XXL,Dozen,PCL32T
 341,963,39,35,399.0,XXL-PCL40,Drawers,Women's Panties,Underwear,977,XXL,Dozen,PCL40
-342,964,39,36,,XXL-PCL98E,Drawers,Women's Panties,Underwear,1075,XXL,Dozen,PCL98E
+342,964,39,36,0.0,XXL-PCL98E,Drawers,Women's Panties,Underwear,1075,XXL,Dozen,PCL98E
 343,2113,39,37,1.0,3XL-PCL30,Drawers,Women's Panties,Underwear,1149,3XL,Dozen,PCL30
 344,1365,39,38,13.0,3XL-PCL32E,Drawers,Women's Panties,Underwear,1085,3XL,Dozen,PCL32E
 345,2650,39,39,37.0,4XL-PCL40E,Drawers,Women's Panties,Underwear,1245,4XL,Dozen,PCL40E
@@ -461,8 +461,8 @@
 459,4280,53,107,75.0,L-BX46CF,Thongs,Men's Briefs,Underwear,85,L,Single Unit,BX46CF
 460,4282,53,108,6.0,XXL-BX46CF,Thongs,Men's Briefs,Underwear,100,XXL,Single Unit,BX46CF
 461,4301,53,109,75.0,3XL-S4602SV,Thongs,Men's Briefs,Underwear,670,3XL,Single Unit,S4602SV
-462,4338,53,110,,L-TB86,Thongs,Women's Panties,Underwear,195,L,Dozen,TB86
-463,4347,53,111,,S-TB4690,Thongs,Women's Panties,Underwear,155,S,Dozen,TB4690
+462,4338,53,110,0.0,L-TB86,Thongs,Women's Panties,Underwear,195,L,Dozen,TB86
+463,4347,53,111,0.0,S-TB4690,Thongs,Women's Panties,Underwear,155,S,Dozen,TB4690
 464,4369,53,112,14.0,S-TB86P,Thongs,Women's Panties,Underwear,150,S,Dozen,TB86P
 465,4370,53,113,57.0,L-TB86P,Thongs,Women's Panties,Underwear,200,L,Dozen,TB86P
 466,4371,53,114,70.0,S-TIEE1405,Thongs,Women's Panties,Underwear,95,S,Dozen,TIEE1405
@@ -479,16 +479,16 @@
 477,2339,53,125,2.0,XL-TEE4600S,Thongs,Women's Panties,Underwear,216,XL,Dozen,TEE4600S
 478,4385,53,126,42.0,S-TBA91,Thongs,Women's Panties,Underwear,155,S,Dozen,TBA91
 479,4386,53,127,37.0,S-TBA91S,Thongs,Women's Panties,Underwear,145,S,Dozen,TBA91S
-480,4388,53,128,,S-TB4607S,Thongs,Women's Panties,Underwear,155,S,Dozen,TB4607S
-481,4389,53,129,,L-TB4607,Thongs,Women's Panties,Underwear,205,L,Dozen,TB4607
-482,4390,53,130,,L-TB4607S,Thongs,Women's Panties,Underwear,205,L,Dozen,TB4607S
-483,4395,53,131,,M-TB4607S,Thongs,Women's Panties,Underwear,160,M,Dozen,TB4607S
-484,310,53,132,,L-TA31,Thongs,Women's Panties,Underwear,193,L,Dozen,TA31
-485,311,53,133,,L-TA31S,Thongs,Women's Panties,Underwear,206,L,Dozen,TA31S
-486,312,53,134,,L-TA32S,Thongs,Women's Panties,Underwear,191,L,Dozen,TA32S
+480,4388,53,128,0.0,S-TB4607S,Thongs,Women's Panties,Underwear,155,S,Dozen,TB4607S
+481,4389,53,129,0.0,L-TB4607,Thongs,Women's Panties,Underwear,205,L,Dozen,TB4607
+482,4390,53,130,0.0,L-TB4607S,Thongs,Women's Panties,Underwear,205,L,Dozen,TB4607S
+483,4395,53,131,0.0,M-TB4607S,Thongs,Women's Panties,Underwear,160,M,Dozen,TB4607S
+484,310,53,132,0.0,L-TA31,Thongs,Women's Panties,Underwear,193,L,Dozen,TA31
+485,311,53,133,0.0,L-TA31S,Thongs,Women's Panties,Underwear,206,L,Dozen,TA31S
+486,312,53,134,0.0,L-TA32S,Thongs,Women's Panties,Underwear,191,L,Dozen,TA32S
 487,313,53,135,165.0,L-TA46SK,Thongs,Women's Panties,Underwear,219,L,Dozen,TA46SK
 488,4417,53,136,10.0,L-TB4667,Thongs,Women's Panties,Underwear,185,L,Dozen,TB4667
-489,4423,53,137,,M-TV46,Thongs,Women's Panties,Underwear,190,M,Dozen,TV46
+489,4423,53,137,0.0,M-TV46,Thongs,Women's Panties,Underwear,190,M,Dozen,TV46
 490,2562,53,138,30.0,L-TB1015,Thongs,Women's Panties,Underwear,214,L,Dozen,TB1015
 491,2584,53,139,1.0,S-TEEB81,Thongs,Women's Panties,Underwear,148,S,Dozen,TEEB81
 492,2585,53,140,1.0,S-TEEB81S,Thongs,Women's Panties,Underwear,147,S,Dozen,TEEB81S
@@ -549,8 +549,8 @@
 547,598,53,195,105.0,M-TA46V,Thongs,Women's Panties,Underwear,178,M,Dozen,TA46V
 548,599,53,196,395.0,M-TA46Z,Thongs,Women's Panties,Underwear,178,M,Dozen,TA46Z
 549,600,53,197,134.0,M-TA7800,Thongs,Women's Panties,Underwear,192,M,Dozen,TA7800
-550,601,53,198,,M-TA7800S,Thongs,Women's Panties,Underwear,185,M,Dozen,TA7800S
-551,602,53,199,,M-TA97,Thongs,Women's Panties,Underwear,180,M,Dozen,TA97
+550,601,53,198,0.0,M-TA7800S,Thongs,Women's Panties,Underwear,185,M,Dozen,TA7800S
+551,602,53,199,0.0,M-TA97,Thongs,Women's Panties,Underwear,180,M,Dozen,TA97
 552,603,53,200,48.0,M-TAB10,Thongs,Women's Panties,Underwear,145,M,Dozen,TAB10
 553,604,53,201,5.0,M-TAB11,Thongs,Women's Panties,Underwear,168,M,Dozen,TAB11
 554,605,53,202,70.0,M-TAB11S,Thongs,Women's Panties,Underwear,167,M,Dozen,TAB11S
@@ -560,7 +560,7 @@
 558,609,53,206,49.0,M-TAB97,Thongs,Women's Panties,Underwear,192,M,Dozen,TAB97
 559,610,53,207,5.0,M-TIA82,Thongs,Women's Panties,Underwear,168,M,Dozen,TIA82
 560,611,53,208,45.0,M-TO31,Thongs,Women's Panties,Underwear,205,M,Dozen,TO31
-561,612,53,209,,M-TO31S,Thongs,Women's Panties,Underwear,221,M,Dozen,TO31S
+561,612,53,209,0.0,M-TO31S,Thongs,Women's Panties,Underwear,221,M,Dozen,TO31S
 562,613,53,210,1.0,M-TO32,Thongs,Women's Panties,Underwear,144,M,Dozen,TO32
 563,614,54,0,6.0,M-TO94,Thongs,Women's Panties,Underwear,155,M,Dozen,TO94
 564,2677,54,1,22.0,M-TFF77,Thongs,Women's Panties,Underwear,190,M,Dozen,TFF77
@@ -634,7 +634,7 @@
 632,753,54,69,245.0,S-TAB97,Thongs,Women's Panties,Underwear,137,S,Dozen,TAB97
 633,754,54,70,14.0,S-TIA82,Thongs,Women's Panties,Underwear,168,S,Dozen,TIA82
 634,755,54,71,10.0,S-TO31S,Thongs,Women's Panties,Underwear,207,S,Dozen,TO31S
-635,756,54,72,,S-TO32,Thongs,Women's Panties,Underwear,191,S,Dozen,TO32
+635,756,54,72,0.0,S-TO32,Thongs,Women's Panties,Underwear,191,S,Dozen,TO32
 636,757,54,73,1.0,S-TO32S,Thongs,Women's Panties,Underwear,191,S,Dozen,TO32S
 637,2812,54,74,70.0,S-TAG46,Thongs,Women's Panties,Underwear,200,S,Dozen,TAG46
 638,2813,54,75,7.0,M-TAG46,Thongs,Women's Panties,Underwear,215,M,Dozen,TAG46
@@ -681,7 +681,7 @@
 679,3024,54,116,14.0,M-TB4627,Thongs,Women's Panties,Underwear,140,M,Dozen,TB4627
 680,2638,54,117,3.0,M-TTB12S,Thongs,Women's Panties,Underwear,104,M,Dozen,TTB12S
 681,2639,54,118,164.0,M-TB1011S,Thongs,Women's Panties,Underwear,188,M,Dozen,TB1011S
-682,2640,54,119,,M-TEE1081S,Thongs,Women's Panties,Underwear,204,M,Dozen,TEE1081S
+682,2640,54,119,0.0,M-TEE1081S,Thongs,Women's Panties,Underwear,204,M,Dozen,TEE1081S
 683,2641,54,120,1.0,M-TH85,Thongs,Women's Panties,Underwear,156,M,Dozen,TH85
 684,2642,54,121,40.0,M-TIB50S,Thongs,Women's Panties,Underwear,103,M,Dozen,TIB50S
 685,3087,54,122,40.0,M-TBP86,Thongs,Women's Panties,Underwear,175,M,Dozen,TBP86
@@ -710,7 +710,7 @@
 708,3225,54,145,40.0,L-TAL46,Thongs,Women's Panties,Underwear,160,L,Dozen,TAL46
 709,3228,54,146,40.0,L-TB4602,Thongs,Women's Panties,Underwear,185,L,Dozen,TB4602
 710,3229,54,147,40.0,M-TB4602,Thongs,Women's Panties,Underwear,165,M,Dozen,TB4602
-711,1206,54,148,,L-TO32S,Thongs,Women's Panties,Underwear,226,L,Dozen,TO32S
+711,1206,54,148,0.0,L-TO32S,Thongs,Women's Panties,Underwear,226,L,Dozen,TO32S
 712,1207,54,149,50.0,S-TO23,Thongs,Women's Panties,Underwear,156,S,Dozen,TO23
 713,3267,54,150,17.0,L-TAL46S,Thongs,Women's Panties,Underwear,185,L,Dozen,TAL46S
 714,3268,54,151,19.0,L-TAS46P,Thongs,Women's Panties,Underwear,225,L,Dozen,TAS46P
@@ -946,8 +946,8 @@
 944,120,112,3,238.0,L-191S,Undershirts,Men's Undershirts,Underwear,1360,L,Dozen,191S
 945,121,112,4,54.0,L-191S1,Undershirts,Men's Undershirts,Underwear,113,L,Single Unit,191S1
 946,122,112,5,1.0,L-1931,Undershirts,Men's Undershirts,Underwear,116,L,Single Unit,1931
-947,123,112,6,,L-1941,Undershirts,Men's Undershirts,Underwear,117,L,Single Unit,1941
-948,124,112,7,,L-3101,Undershirts,Women's Undershirts,Underwear,87,L,Single Unit,3101
+947,123,112,6,0.0,L-1941,Undershirts,Men's Undershirts,Underwear,117,L,Single Unit,1941
+948,124,112,7,0.0,L-3101,Undershirts,Women's Undershirts,Underwear,87,L,Single Unit,3101
 949,125,112,8,20.0,L-3101S,Undershirts,Women's Undershirts,Underwear,95,L,Single Unit,3101S
 950,126,112,9,20.0,L-3102,Undershirts,Women's Undershirts,Underwear,102,L,Single Unit,3102
 951,127,112,10,11.0,L-3102S,Undershirts,Women's Undershirts,Underwear,113,L,Single Unit,3102S
@@ -958,8 +958,8 @@
 956,132,112,15,94.0,L-3105S,Undershirts,Women's Undershirts,Underwear,113,L,Single Unit,3105S
 957,133,112,16,335.0,L-3106,Undershirts,Women's Undershirts,Underwear,116,L,Single Unit,3106
 958,134,112,17,12.0,L-4201,Undershirts,Women's Undershirts,Underwear,112,L,Single Unit,4201
-959,135,112,18,,L-4202,Undershirts,Women's Undershirts,Underwear,102,L,Single Unit,4202
-960,136,112,19,,L-4203,Undershirts,Women's Undershirts,Underwear,128,L,Single Unit,4203
+959,135,112,18,0.0,L-4202,Undershirts,Women's Undershirts,Underwear,102,L,Single Unit,4202
+960,136,112,19,0.0,L-4203,Undershirts,Women's Undershirts,Underwear,128,L,Single Unit,4203
 961,137,112,20,6.0,L-4204,Undershirts,Women's Undershirts,Underwear,98,L,Single Unit,4204
 962,138,112,21,9.0,L-4205,Undershirts,Women's Undershirts,Underwear,94,L,Single Unit,4205
 963,2179,112,22,6.0,L-200,Undershirts,Women's Undershirts,Underwear,970,L,Dozen,200
@@ -972,7 +972,7 @@
 970,4318,112,29,11.0,XL-199,Undershirts,Women's Undershirts,Underwear,1140,XL,Dozen,199
 971,4324,112,30,20.0,LXL-ATL4641S,Undershirts,Women's Undershirts,Underwear,745,L-XL,Dozen,ATL4641S
 972,4327,112,31,20.0,SM-ATL4641,Undershirts,Women's Undershirts,Underwear,620,S-M,Dozen,ATL4641
-973,4328,112,32,,LXL-ATL90,Undershirts,Women's Undershirts,Underwear,685,L-XL,Dozen,ATL90
+973,4328,112,32,0.0,LXL-ATL90,Undershirts,Women's Undershirts,Underwear,685,L-XL,Dozen,ATL90
 974,2286,112,33,11.0,L-177S,Undershirts,Men's Undershirts,Underwear,1368,L,Dozen,177S
 975,2287,112,34,12.0,M-177S,Undershirts,Men's Undershirts,Underwear,1175,M,Dozen,177S
 976,2288,112,35,11.0,S-171,Undershirts,Men's Undershirts,Underwear,924,S,Dozen,171
@@ -1018,19 +1018,19 @@
 1016,331,112,75,59.0,M-1911,Undershirts,Men's Undershirts,Underwear,92,M,Single Unit,1911
 1017,332,112,76,5.0,M-191S,Undershirts,Men's Undershirts,Underwear,1171,M,Dozen,191S
 1018,333,112,77,30.0,M-191S1,Undershirts,Men's Undershirts,Underwear,98,M,Single Unit,191S1
-1019,334,112,78,,M-3101,Undershirts,Women's Undershirts,Underwear,75,M,Single Unit,3101
+1019,334,112,78,0.0,M-3101,Undershirts,Women's Undershirts,Underwear,75,M,Single Unit,3101
 1020,335,112,79,4.0,M-3102,Undershirts,Women's Undershirts,Underwear,91,M,Single Unit,3102
 1021,336,112,80,34.0,M-3103,Undershirts,Women's Undershirts,Underwear,110,M,Single Unit,3103
 1022,337,112,81,6.0,M-3103S,Undershirts,Women's Undershirts,Underwear,120,M,Single Unit,3103S
 1023,338,112,82,35.0,M-3104,Undershirts,Women's Undershirts,Underwear,72,M,Single Unit,3104
-1024,339,112,83,,M-3104S,Undershirts,Women's Undershirts,Underwear,93,M,Single Unit,3104S
+1024,339,112,83,0.0,M-3104S,Undershirts,Women's Undershirts,Underwear,93,M,Single Unit,3104S
 1025,340,112,84,3.0,M-3105,Undershirts,Women's Undershirts,Underwear,85,M,Single Unit,3105
 1026,341,112,85,281.0,M-3106,Undershirts,Women's Undershirts,Underwear,107,M,Single Unit,3106
 1027,342,112,86,306.0,M-3106S,Undershirts,Women's Undershirts,Underwear,112,M,Single Unit,3106S
-1028,343,112,87,,M-4201,Undershirts,Women's Undershirts,Underwear,93,M,Single Unit,4201
-1029,344,112,88,,M-4202,Undershirts,Women's Undershirts,Underwear,88,M,Single Unit,4202
+1028,343,112,87,0.0,M-4201,Undershirts,Women's Undershirts,Underwear,93,M,Single Unit,4201
+1029,344,112,88,0.0,M-4202,Undershirts,Women's Undershirts,Underwear,88,M,Single Unit,4202
 1030,345,112,89,3.0,M-4203,Undershirts,Women's Undershirts,Underwear,112,M,Single Unit,4203
-1031,346,112,90,,M-4204,Undershirts,Women's Undershirts,Underwear,93,M,Single Unit,4204
+1031,346,112,90,0.0,M-4204,Undershirts,Women's Undershirts,Underwear,93,M,Single Unit,4204
 1032,347,112,91,7.0,M-4205,Undershirts,Women's Undershirts,Underwear,98,M,Single Unit,4205
 1033,348,112,92,76.0,M-4206,Undershirts,Women's Undershirts,Underwear,109,M,Single Unit,4206
 1034,2451,112,93,12.0,XL-201S,Undershirts,Women's Undershirts,Underwear,1107,XL,Dozen,201S
@@ -1047,14 +1047,14 @@
 1045,2546,112,104,5.0,LXL-205K,Undershirts,Women's Undershirts,Underwear,1035,L-XL,Dozen,205K
 1046,2685,112,105,4.0,M-177S1,Undershirts,Men's Undershirts,Underwear,115,M,Single Unit,177S1
 1047,642,112,106,62.0,S-173,Undershirts,Women's Undershirts,Underwear,662,S,Dozen,173
-1048,643,112,107,,S-3101,Undershirts,Women's Undershirts,Underwear,71,S,Single Unit,3101
+1048,643,112,107,0.0,S-3101,Undershirts,Women's Undershirts,Underwear,71,S,Single Unit,3101
 1049,645,112,108,81.0,S-3103,Undershirts,Women's Undershirts,Underwear,101,S,Single Unit,3103
 1050,646,112,109,57.0,S-3103S,Undershirts,Women's Undershirts,Underwear,101,S,Single Unit,3103S
 1051,647,112,110,38.0,S-3104,Undershirts,Women's Undershirts,Underwear,69,S,Single Unit,3104
-1052,648,112,111,,S-3104S,Undershirts,Women's Undershirts,Underwear,91,S,Single Unit,3104S
+1052,648,112,111,0.0,S-3104S,Undershirts,Women's Undershirts,Underwear,91,S,Single Unit,3104S
 1053,649,112,112,172.0,S-3106,Undershirts,Women's Undershirts,Underwear,102,S,Single Unit,3106
 1054,650,112,113,110.0,S-3106S,Undershirts,Women's Undershirts,Underwear,111,S,Single Unit,3106S
-1055,651,112,114,,S-4201,Undershirts,Women's Undershirts,Underwear,89,S,Single Unit,4201
+1055,651,112,114,0.0,S-4201,Undershirts,Women's Undershirts,Underwear,89,S,Single Unit,4201
 1056,652,112,115,1.0,S-4205,Undershirts,Women's Undershirts,Underwear,89,S,Single Unit,4205
 1057,2704,112,116,180.0,M-211,Undershirts,Men's Undershirts,Underwear,105,M,Single Unit,211
 1058,2705,112,117,13.0,M-208,Undershirts,Women's Undershirts,Underwear,820,M,Dozen,208
@@ -1089,8 +1089,8 @@
 1087,894,112,146,4.0,XXL-191,Undershirts,Men's Undershirts,Underwear,1410,XXL,Dozen,191
 1088,895,112,147,160.0,XXL-191S,Undershirts,Men's Undershirts,Underwear,1490,XXL,Dozen,191S
 1089,896,112,148,71.0,XXL-191S1,Undershirts,Men's Undershirts,Underwear,122,XXL,Single Unit,191S1
-1090,897,112,149,,XXL-193,Undershirts,Men's Undershirts,Underwear,1544,XXL,Dozen,193
-1091,898,112,150,,XXL-1931,Undershirts,Men's Undershirts,Underwear,122,XXL,Single Unit,1931
+1090,897,112,149,0.0,XXL-193,Undershirts,Men's Undershirts,Underwear,1544,XXL,Dozen,193
+1091,898,112,150,0.0,XXL-1931,Undershirts,Men's Undershirts,Underwear,122,XXL,Single Unit,1931
 1092,2946,112,151,30.0,SM-ATL441,Undershirts,Women's Undershirts,Underwear,645,S-M,Dozen,ATL441
 1093,2947,112,152,30.0,LXL-ATL441,Undershirts,Women's Undershirts,Underwear,740,L-XL,Dozen,ATL441
 1094,2948,112,153,1.0,SM-ATL442,Undershirts,Women's Undershirts,Underwear,640,S-M,Dozen,ATL442
@@ -1237,7 +1237,7 @@
 1235,3747,113,83,35.0,LXL-FAV55,Undershirts,Women's Undershirts,Underwear,995,L-XL,Dozen,FAV55
 1236,3748,113,84,15.0,4-170,Undershirts,Girls' Undershirts,Underwear,665,L,Dozen,170
 1237,3749,113,85,7.0,LXL-ATL55,Undershirts,Women's Undershirts,Underwear,705,L-XL,Dozen,ATL55
-1238,3753,113,86,,4-185,Undershirts,Girls' Undershirts,Underwear,815,L,Dozen,185
+1238,3753,113,86,0.0,4-185,Undershirts,Girls' Undershirts,Underwear,815,L,Dozen,185
 1239,3754,113,87,11.0,1-160,Undershirts,Girls' Undershirts,Underwear,400,XS,Dozen,160
 1240,3755,113,88,5.0,2-160,Undershirts,Girls' Undershirts,Underwear,460,S,Dozen,160
 1241,3756,113,89,11.0,3-160,Undershirts,Girls' Undershirts,Underwear,520,M,Dozen,160
@@ -1260,10 +1260,10 @@
 1258,3956,113,106,10.0,LXL-FAV90,Undershirts,Women's Undershirts,Underwear,960,L-XL,Dozen,FAV90
 1259,3957,113,107,9.0,LXL-BAD90,Undershirts,Women's Undershirts,Underwear,390,L-XL,Dozen,BAD90
 1260,5,155,147,555.0,3-A30N,Briefs,Girls' Panties,Underwear,214,M,Dozen,A30N
-1261,8,155,148,,3-ERK33,Briefs,Boys' Briefs,Underwear,389,M,Dozen,ERK33
+1261,8,155,148,0.0,3-ERK33,Briefs,Boys' Briefs,Underwear,389,M,Dozen,ERK33
 1262,9,155,149,4920.0,3-ERK61,Briefs,Boys' Briefs,Underwear,325,M,Dozen,ERK61
 1263,10,155,150,12.0,3-ERK63,Briefs,Boys' Briefs,Underwear,340,M,Dozen,ERK63
-1264,11,155,151,,3-GB31,Briefs,Girls' Panties,Underwear,370,M,Dozen,GB31
+1264,11,155,151,0.0,3-GB31,Briefs,Girls' Panties,Underwear,370,M,Dozen,GB31
 1265,12,155,152,45.0,3-GB31E,Briefs,Girls' Panties,Underwear,345,M,Dozen,GB31E
 1266,13,155,153,2.0,3-GB32,Briefs,Girls' Panties,Underwear,330,M,Dozen,GB32
 1267,14,155,154,25.0,3-GB32E,Briefs,Girls' Panties,Underwear,359,M,Dozen,GB32E
@@ -1274,11 +1274,11 @@
 1272,19,155,159,418.0,3-K218,Briefs,Girls' Panties,Underwear,280,M,Dozen,K218
 1273,20,155,160,675.0,3-K21E,Briefs,Girls' Panties,Underwear,276,M,Dozen,K21E
 1274,21,155,161,2.0,3-K22,Briefs,Girls' Panties,Underwear,381,M,Dozen,K22
-1275,22,155,162,,3-K22E,Briefs,Girls' Panties,Underwear,281,M,Dozen,K22E
+1275,22,155,162,0.0,3-K22E,Briefs,Girls' Panties,Underwear,281,M,Dozen,K22E
 1276,23,155,163,280.0,3-K23,Briefs,Girls' Panties,Underwear,242,M,Dozen,K23
 1277,24,155,164,185.0,3-K23E,Briefs,Girls' Panties,Underwear,271,M,Dozen,K23E
 1278,25,155,165,1549.0,3-K24E,Briefs,Girls' Panties,Underwear,330,M,Dozen,K24E
-1279,26,155,166,,3-K26,Briefs,Girls' Panties,Underwear,329,M,Dozen,K26
+1279,26,155,166,0.0,3-K26,Briefs,Girls' Panties,Underwear,329,M,Dozen,K26
 1280,27,155,167,503.0,3-K29,Briefs,Girls' Panties,Underwear,273,M,Dozen,K29
 1281,28,155,168,901.0,3-K30,Briefs,Girls' Panties,Underwear,275,M,Dozen,K30
 1282,29,155,169,201.0,3-K30B,Briefs,Girls' Panties,Underwear,282,M,Dozen,K30B
@@ -1302,7 +1302,7 @@
 1300,52,155,187,3766.0,1-ERK61,Briefs,Boys' Briefs,Underwear,280,XS,Dozen,ERK61
 1301,53,155,188,22.0,1-ERK63,Briefs,Boys' Briefs,Underwear,293,XS,Dozen,ERK63
 1302,54,155,189,391.0,1-ERK64,Briefs,Boys' Briefs,Underwear,291,XS,Dozen,ERK64
-1303,55,155,190,,1-ERK81,Briefs,Boys' Briefs,Underwear,280,XS,Dozen,ERK81
+1303,55,155,190,0.0,1-ERK81,Briefs,Boys' Briefs,Underwear,280,XS,Dozen,ERK81
 1304,56,155,191,656.0,1-K29,Briefs,Girls' Panties,Underwear,219,XS,Dozen,K29
 1305,57,155,192,546.0,1-K30,Briefs,Girls' Panties,Underwear,202,XS,Dozen,K30
 1306,58,155,193,391.0,1-K30B,Briefs,Girls' Panties,Underwear,212,XS,Dozen,K30B
@@ -1311,7 +1311,7 @@
 1309,61,155,196,681.0,1-K32,Briefs,Girls' Panties,Underwear,252,XS,Dozen,K32
 1310,62,155,197,930.0,1-K32E,Briefs,Girls' Panties,Underwear,221,XS,Dozen,K32E
 1311,63,155,198,1.0,1-K98E,Briefs,Girls' Panties,Underwear,219,XS,Dozen,K98E
-1312,71,155,199,,2-ERK33,Briefs,Boys' Briefs,Underwear,328,S,Dozen,ERK33
+1312,71,155,199,0.0,2-ERK33,Briefs,Boys' Briefs,Underwear,328,S,Dozen,ERK33
 1313,72,155,200,4446.0,2-ERK61,Briefs,Boys' Briefs,Underwear,233,S,Dozen,ERK61
 1314,73,155,201,22.0,2-ERK63,Briefs,Boys' Briefs,Underwear,301,S,Dozen,ERK63
 1315,74,155,202,610.0,2-ERK64,Briefs,Boys' Briefs,Underwear,310,S,Dozen,ERK64
@@ -1336,26 +1336,26 @@
 1334,141,156,10,90.0,L-A4654,Briefs,Women's Panties,Underwear,336,L,Dozen,A4654
 1335,142,156,11,85.0,L-A4674,Briefs,Women's Panties,Underwear,336,L,Dozen,A4674
 1336,143,156,12,22.0,L-A4675,Briefs,Women's Panties,Underwear,336,L,Dozen,A4675
-1337,144,156,13,,L-A46S,Briefs,Women's Panties,Underwear,353,L,Dozen,A46S
+1337,144,156,13,0.0,L-A46S,Briefs,Women's Panties,Underwear,353,L,Dozen,A46S
 1338,145,156,14,48.0,L-A52,Briefs,Women's Panties,Underwear,384,L,Dozen,A52
 1339,146,156,15,52.0,L-A821,Briefs,Women's Panties,Underwear,281,L,Dozen,A821
-1340,147,156,16,,L-BB32S,Briefs,Women's Panties,Underwear,374,L,Dozen,BB32S
+1340,147,156,16,0.0,L-BB32S,Briefs,Women's Panties,Underwear,374,L,Dozen,BB32S
 1341,148,156,17,10.0,L-BB32T,Briefs,Women's Panties,Underwear,373,L,Dozen,BB32T
 1342,149,156,18,5.0,L-BB46S,Briefs,Women's Panties,Underwear,395,L,Dozen,BB46S
 1343,150,156,19,4.0,L-BB46T,Briefs,Women's Panties,Underwear,405,L,Dozen,BB46T
 1344,165,156,20,8.0,L-C1011S,Briefs,Women's Panties,Underwear,310,L,Dozen,C1011S
-1345,166,156,21,,L-C10S,Briefs,Women's Panties,Underwear,310,L,Dozen,C10S
+1345,166,156,21,0.0,L-C10S,Briefs,Women's Panties,Underwear,310,L,Dozen,C10S
 1346,167,156,22,13.0,L-C11S,Briefs,Women's Panties,Underwear,305,L,Dozen,C11S
-1347,168,156,23,,L-C32,Briefs,Women's Panties,Underwear,305,L,Dozen,C32
-1348,169,156,24,,L-C32E,Briefs,Women's Panties,Underwear,350,L,Dozen,C32E
+1347,168,156,23,0.0,L-C32,Briefs,Women's Panties,Underwear,305,L,Dozen,C32
+1348,169,156,24,0.0,L-C32E,Briefs,Women's Panties,Underwear,350,L,Dozen,C32E
 1349,170,156,25,15.0,L-C32S,Briefs,Women's Panties,Underwear,365,L,Dozen,C32S
-1350,171,156,26,,L-C46D,Briefs,Women's Panties,Underwear,365,L,Dozen,C46D
-1351,172,156,27,,L-C46K,Briefs,Women's Panties,Underwear,383,L,Dozen,C46K
+1350,171,156,26,0.0,L-C46D,Briefs,Women's Panties,Underwear,365,L,Dozen,C46D
+1351,172,156,27,0.0,L-C46K,Briefs,Women's Panties,Underwear,383,L,Dozen,C46K
 1352,173,156,28,7.0,L-C46S,Briefs,Women's Panties,Underwear,380,L,Dozen,C46S
 1353,174,156,29,1.0,L-C46SD,Briefs,Women's Panties,Underwear,345,L,Dozen,C46SD
 1354,175,156,30,43.0,L-C46SK,Briefs,Women's Panties,Underwear,359,L,Dozen,C46SK
-1355,176,156,31,,L-C97,Briefs,Women's Panties,Underwear,282,L,Dozen,C97
-1356,177,156,32,,L-C97S,Briefs,Women's Panties,Underwear,283,L,Dozen,C97S
+1355,176,156,31,0.0,L-C97,Briefs,Women's Panties,Underwear,282,L,Dozen,C97
+1356,177,156,32,0.0,L-C97S,Briefs,Women's Panties,Underwear,283,L,Dozen,C97S
 1357,178,156,33,5.0,L-D31S,Briefs,Women's Panties,Underwear,515,L,Dozen,D31S
 1358,179,156,34,11.0,L-D46S,Briefs,Women's Panties,Underwear,515,L,Dozen,D46S
 1359,180,156,35,364.0,L-D46T,Briefs,Women's Panties,Underwear,405,L,Dozen,D46T
@@ -1366,12 +1366,12 @@
 1364,185,156,40,1384.0,L-ERK64,Briefs,Men's Briefs,Underwear,585,L,Dozen,ERK64
 1365,186,156,41,128.0,L-ERK64B,Briefs,Men's Briefs,Underwear,610,L,Dozen,ERK64B
 1366,187,156,42,14.0,L-ERK81,Briefs,Men's Briefs,Underwear,286,L,Dozen,ERK81
-1367,189,156,43,,L-G31E,Briefs,Women's Panties,Underwear,390,L,Dozen,G31E
+1367,189,156,43,0.0,L-G31E,Briefs,Women's Panties,Underwear,390,L,Dozen,G31E
 1368,190,156,44,1255.0,L-G46,Briefs,Women's Panties,Underwear,369,L,Dozen,G46
 1369,191,156,45,82.0,L-G46E,Briefs,Women's Panties,Underwear,401,L,Dozen,G46E
 1370,192,156,46,327.0,L-G46S,Briefs,Women's Panties,Underwear,400,L,Dozen,G46S
 1371,193,156,47,20.0,L-GS56,Briefs,Women's Panties,Underwear,732,L,Dozen,GS56
-1372,194,156,48,,L-H46,Briefs,Women's Panties,Underwear,341,L,Dozen,H46
+1372,194,156,48,0.0,L-H46,Briefs,Women's Panties,Underwear,341,L,Dozen,H46
 1373,195,156,49,255.0,L-H46073,Briefs,Women's Panties,Underwear,400,L,Dozen,H46073
 1374,196,156,50,2337.0,L-K21,Briefs,Women's Panties,Underwear,480,L,Dozen,K21
 1375,197,156,51,1794.0,L-K21E,Briefs,Women's Panties,Underwear,480,L,Dozen,K21E
@@ -1388,10 +1388,10 @@
 1386,208,156,62,171.0,L-K26T,Briefs,Women's Panties,Underwear,525,L,Dozen,K26T
 1387,209,156,63,1650.0,L-K29,Briefs,Women's Panties,Underwear,434,L,Dozen,K29
 1388,210,156,64,1831.0,L-K30,Briefs,Women's Panties,Underwear,470,L,Dozen,K30
-1389,211,156,65,,L-K30D,Briefs,Women's Panties,Underwear,431,L,Dozen,K30D
+1389,211,156,65,0.0,L-K30D,Briefs,Women's Panties,Underwear,431,L,Dozen,K30D
 1390,212,156,66,197.0,L-K30SD,Briefs,Women's Panties,Underwear,455,L,Dozen,K30SD
 1391,213,156,67,140.0,L-K30SV,Briefs,Women's Panties,Underwear,450,L,Dozen,K30SV
-1392,214,156,68,,L-K30V,Briefs,Women's Panties,Underwear,431,L,Dozen,K30V
+1392,214,156,68,0.0,L-K30V,Briefs,Women's Panties,Underwear,431,L,Dozen,K30V
 1393,215,156,69,1567.0,L-K31,Briefs,Women's Panties,Underwear,470,L,Dozen,K31
 1394,216,156,70,1766.0,L-K31E,Briefs,Women's Panties,Underwear,460,L,Dozen,K31E
 1395,217,156,71,293.0,L-K31S,Briefs,Women's Panties,Underwear,505,L,Dozen,K31S
@@ -1406,7 +1406,7 @@
 1404,226,156,80,161.0,L-K408,Briefs,Women's Panties,Underwear,419,L,Dozen,K408
 1405,227,156,81,20.0,L-K40E,Briefs,Women's Panties,Underwear,461,L,Dozen,K40E
 1406,229,156,82,10.0,L-K411,Briefs,Women's Panties,Underwear,478,L,Dozen,K411
-1407,230,156,83,,L-K414,Briefs,Women's Panties,Underwear,478,L,Dozen,K414
+1407,230,156,83,0.0,L-K414,Briefs,Women's Panties,Underwear,478,L,Dozen,K414
 1408,231,156,84,59.0,L-K418,Briefs,Women's Panties,Underwear,405,L,Dozen,K418
 1409,232,156,85,2.0,L-K42,Briefs,Women's Panties,Underwear,515,L,Dozen,K42
 1410,233,156,86,15.0,L-K421,Briefs,Women's Panties,Underwear,455,L,Dozen,K421
@@ -1416,17 +1416,17 @@
 1414,238,156,90,41.0,L-K426,Briefs,Women's Panties,Underwear,431,L,Dozen,K426
 1415,240,156,91,2.0,L-K426S,Briefs,Women's Panties,Underwear,443,L,Dozen,K426S
 1416,242,156,92,75.0,L-K427,Briefs,Women's Panties,Underwear,449,L,Dozen,K427
-1417,244,156,93,,L-K428,Briefs,Women's Panties,Underwear,449,L,Dozen,K428
+1417,244,156,93,0.0,L-K428,Briefs,Women's Panties,Underwear,449,L,Dozen,K428
 1418,246,156,94,7.0,L-K43,Briefs,Women's Panties,Underwear,506,L,Dozen,K43
 1419,248,156,95,4.0,L-K430,Briefs,Women's Panties,Underwear,449,L,Dozen,K430
 1420,250,156,96,121.0,L-K452,Briefs,Women's Panties,Underwear,413,L,Dozen,K452
 1421,252,156,97,4199.0,L-K46,Briefs,Women's Panties,Underwear,515,L,Dozen,K46
 1422,253,156,98,39.0,L-K462,Briefs,Women's Panties,Underwear,474,L,Dozen,K462
-1423,255,156,99,,L-K4639,Briefs,Women's Panties,Underwear,462,L,Dozen,K4639
+1423,255,156,99,0.0,L-K4639,Briefs,Women's Panties,Underwear,462,L,Dozen,K4639
 1424,257,156,100,108.0,L-K4653,Briefs,Women's Panties,Underwear,462,L,Dozen,K4653
 1425,258,156,101,22.0,L-K4654,Briefs,Women's Panties,Underwear,462,L,Dozen,K4654
 1426,259,156,102,470.0,L-K4656,Briefs,Women's Panties,Underwear,463,L,Dozen,K4656
-1427,260,156,103,,L-K4671,Briefs,Women's Panties,Underwear,509,L,Dozen,K4671
+1427,260,156,103,0.0,L-K4671,Briefs,Women's Panties,Underwear,509,L,Dozen,K4671
 1428,261,156,104,2939.0,L-K4673,Briefs,Women's Panties,Underwear,506,L,Dozen,K4673
 1429,262,156,105,642.0,L-K4674,Briefs,Women's Panties,Underwear,509,L,Dozen,K4674
 1430,263,156,106,5.0,L-K4675,Briefs,Women's Panties,Underwear,509,L,Dozen,K4675
@@ -1442,28 +1442,28 @@
 1440,273,156,116,1.0,L-K481,Briefs,Women's Panties,Underwear,516,L,Dozen,K481
 1441,274,156,117,80.0,L-K498,Briefs,Women's Panties,Underwear,516,L,Dozen,K498
 1442,275,156,118,35.0,L-K502,Briefs,Women's Panties,Underwear,485,L,Dozen,K502
-1443,277,156,119,,L-K507,Briefs,Women's Panties,Underwear,504,L,Dozen,K507
+1443,277,156,119,0.0,L-K507,Briefs,Women's Panties,Underwear,504,L,Dozen,K507
 1444,278,156,120,37.0,L-K509,Briefs,Women's Panties,Underwear,516,L,Dozen,K509
 1445,279,156,121,51.0,L-K509S,Briefs,Women's Panties,Underwear,517,L,Dozen,K509S
-1446,280,156,122,,L-K515,Briefs,Women's Panties,Underwear,516,L,Dozen,K515
+1446,280,156,122,0.0,L-K515,Briefs,Women's Panties,Underwear,516,L,Dozen,K515
 1447,281,156,123,436.0,L-K52,Briefs,Women's Panties,Underwear,510,L,Dozen,K52
 1448,282,156,124,200.0,L-K528,Briefs,Women's Panties,Underwear,516,L,Dozen,K528
 1449,283,156,125,110.0,L-K529,Briefs,Women's Panties,Underwear,516,L,Dozen,K529
 1450,284,156,126,7.0,L-K52S,Briefs,Women's Panties,Underwear,520,L,Dozen,K52S
-1451,285,156,127,,L-K56T,Briefs,Women's Panties,Underwear,510,L,Dozen,K56T
+1451,285,156,127,0.0,L-K56T,Briefs,Women's Panties,Underwear,510,L,Dozen,K56T
 1452,286,156,128,218.0,L-K68,Briefs,Women's Panties,Underwear,516,L,Dozen,K68
-1453,287,156,129,,L-K68E,Briefs,Women's Panties,Underwear,516,L,Dozen,K68E
+1453,287,156,129,0.0,L-K68E,Briefs,Women's Panties,Underwear,516,L,Dozen,K68E
 1454,288,156,130,105.0,L-K68T,Briefs,Women's Panties,Underwear,510,L,Dozen,K68T
 1455,289,156,131,2.0,L-K76E,Briefs,Women's Panties,Underwear,497,L,Dozen,K76E
-1456,290,156,132,,L-K77,Briefs,Women's Panties,Underwear,502,L,Dozen,K77
-1457,291,156,133,,L-K77S,Briefs,Women's Panties,Underwear,508,L,Dozen,K77S
-1458,292,156,134,,L-K91,Briefs,Women's Panties,Underwear,460,L,Dozen,K91
+1456,290,156,132,0.0,L-K77,Briefs,Women's Panties,Underwear,502,L,Dozen,K77
+1457,291,156,133,0.0,L-K77S,Briefs,Women's Panties,Underwear,508,L,Dozen,K77S
+1458,292,156,134,0.0,L-K91,Briefs,Women's Panties,Underwear,460,L,Dozen,K91
 1459,293,156,135,3.0,L-K92,Briefs,Women's Panties,Underwear,425,L,Dozen,K92
-1460,294,156,136,,L-K92E,Briefs,Women's Panties,Underwear,503,L,Dozen,K92E
+1460,294,156,136,0.0,L-K92E,Briefs,Women's Panties,Underwear,503,L,Dozen,K92E
 1461,295,156,137,40.0,L-K93,Briefs,Women's Panties,Underwear,362,L,Dozen,K93
 1462,296,156,138,5.0,L-K94,Briefs,Women's Panties,Underwear,296,L,Dozen,K94
-1463,297,156,139,,L-K98E,Briefs,Women's Panties,Underwear,419,L,Dozen,K98E
-1464,298,156,140,,L-KA946T,Briefs,Women's Panties,Underwear,432,L,Dozen,KA946T
+1463,297,156,139,0.0,L-K98E,Briefs,Women's Panties,Underwear,419,L,Dozen,K98E
+1464,298,156,140,0.0,L-KA946T,Briefs,Women's Panties,Underwear,432,L,Dozen,KA946T
 1465,299,156,141,426.0,L-KS46S,Briefs,Women's Panties,Underwear,730,L,Dozen,KS46S
 1466,300,156,142,16.0,L-KS46T,Briefs,Women's Panties,Underwear,690,L,Dozen,KS46T
 1467,301,156,143,41.0,L-N87,Briefs,Women's Panties,Underwear,492,L,Dozen,N87
@@ -1473,7 +1473,7 @@
 1471,305,156,147,145.0,L-S4653,Briefs,Women's Panties,Underwear,370,L,Dozen,S4653
 1472,306,156,148,205.0,L-S4654,Briefs,Women's Panties,Underwear,376,L,Dozen,S4654
 1473,307,156,149,434.0,L-S4674,Briefs,Women's Panties,Underwear,376,L,Dozen,S4674
-1474,308,156,150,,L-S4675,Briefs,Women's Panties,Underwear,431,L,Dozen,S4675
+1474,308,156,150,0.0,L-S4675,Briefs,Women's Panties,Underwear,431,L,Dozen,S4675
 1475,309,156,151,301.0,L-S46S,Briefs,Women's Panties,Underwear,400,L,Dozen,S46S
 1476,314,156,152,74.0,L-U23,Briefs,Women's Panties,Underwear,323,L,Dozen,U23
 1477,315,156,153,571.0,L-U29,Briefs,Women's Panties,Underwear,337,L,Dozen,U29
@@ -1486,7 +1486,7 @@
 1484,351,156,160,316.0,M-A4607,Briefs,Women's Panties,Underwear,246,M,Dozen,A4607
 1485,352,156,161,162.0,M-A4607S,Briefs,Women's Panties,Underwear,246,M,Dozen,A4607S
 1486,353,156,162,163.0,M-A4653,Briefs,Women's Panties,Underwear,311,M,Dozen,A4653
-1487,354,156,163,,M-A4654,Briefs,Women's Panties,Underwear,311,M,Dozen,A4654
+1487,354,156,163,0.0,M-A4654,Briefs,Women's Panties,Underwear,311,M,Dozen,A4654
 1488,355,156,164,35.0,M-A4673,Briefs,Women's Panties,Underwear,334,M,Dozen,A4673
 1489,356,156,165,117.0,M-A4674,Briefs,Women's Panties,Underwear,334,M,Dozen,A4674
 1490,357,156,166,36.0,M-A4675,Briefs,Women's Panties,Underwear,334,M,Dozen,A4675
@@ -1495,46 +1495,46 @@
 1493,360,156,169,94.0,M-A52,Briefs,Women's Panties,Underwear,335,M,Dozen,A52
 1494,361,156,170,63.0,M-A52S,Briefs,Women's Panties,Underwear,380,M,Dozen,A52S
 1495,362,156,171,30.0,M-A7800,Briefs,Women's Panties,Underwear,293,M,Dozen,A7800
-1496,363,156,172,,M-A7800S,Briefs,Women's Panties,Underwear,293,M,Dozen,A7800S
+1496,363,156,172,0.0,M-A7800S,Briefs,Women's Panties,Underwear,293,M,Dozen,A7800S
 1497,364,156,173,60.0,M-A821,Briefs,Women's Panties,Underwear,248,M,Dozen,A821
-1498,365,156,174,,M-A946T,Briefs,Women's Panties,Underwear,420,M,Dozen,A946T
-1499,366,156,175,,M-AF4600,Briefs,Women's Panties,Underwear,305,M,Dozen,AF4600
+1498,365,156,174,0.0,M-A946T,Briefs,Women's Panties,Underwear,420,M,Dozen,A946T
+1499,366,156,175,0.0,M-AF4600,Briefs,Women's Panties,Underwear,305,M,Dozen,AF4600
 1500,367,156,176,1.0,M-AF4601,Briefs,Women's Panties,Underwear,293,M,Dozen,AF4601
 1501,368,156,177,10.0,M-AF4602,Briefs,Women's Panties,Underwear,299,M,Dozen,AF4602
 1502,369,156,178,11.0,M-AF4603,Briefs,Women's Panties,Underwear,323,M,Dozen,AF4603
-1503,370,156,179,,M-AF4604,Briefs,Women's Panties,Underwear,293,M,Dozen,AF4604
-1504,371,156,180,,M-AF4606,Briefs,Women's Panties,Underwear,287,M,Dozen,AF4606
+1503,370,156,179,0.0,M-AF4604,Briefs,Women's Panties,Underwear,293,M,Dozen,AF4604
+1504,371,156,180,0.0,M-AF4606,Briefs,Women's Panties,Underwear,287,M,Dozen,AF4606
 1505,372,156,181,2.0,M-BB13,Briefs,Women's Panties,Underwear,420,M,Dozen,BB13
 1506,373,156,182,5.0,M-BB19,Briefs,Women's Panties,Underwear,424,M,Dozen,BB19
 1507,374,156,183,5.0,M-BB32T,Briefs,Women's Panties,Underwear,317,M,Dozen,BB32T
-1508,375,156,184,,M-BB52T,Briefs,Women's Panties,Underwear,410,M,Dozen,BB52T
-1509,376,156,185,,M-BB56,Briefs,Women's Panties,Underwear,365,M,Dozen,BB56
+1508,375,156,184,0.0,M-BB52T,Briefs,Women's Panties,Underwear,410,M,Dozen,BB52T
+1509,376,156,185,0.0,M-BB56,Briefs,Women's Panties,Underwear,365,M,Dozen,BB56
 1510,389,156,186,42.0,M-C10,Briefs,Women's Panties,Underwear,239,M,Dozen,C10
-1511,391,156,187,,M-C1011S,Briefs,Women's Panties,Underwear,263,M,Dozen,C1011S
+1511,391,156,187,0.0,M-C1011S,Briefs,Women's Panties,Underwear,263,M,Dozen,C1011S
 1512,392,156,188,37.0,M-C10S,Briefs,Women's Panties,Underwear,278,M,Dozen,C10S
-1513,394,156,189,,M-C11S,Briefs,Women's Panties,Underwear,263,M,Dozen,C11S
-1514,396,156,190,,M-C302,Briefs,Women's Panties,Underwear,276,M,Dozen,C302
-1515,398,156,191,,M-C306,Briefs,Women's Panties,Underwear,276,M,Dozen,C306
+1513,394,156,189,0.0,M-C11S,Briefs,Women's Panties,Underwear,263,M,Dozen,C11S
+1514,396,156,190,0.0,M-C302,Briefs,Women's Panties,Underwear,276,M,Dozen,C302
+1515,398,156,191,0.0,M-C306,Briefs,Women's Panties,Underwear,276,M,Dozen,C306
 1516,399,156,192,1.0,M-C307,Briefs,Women's Panties,Underwear,276,M,Dozen,C307
-1517,401,156,193,,M-C30D,Briefs,Women's Panties,Underwear,275,M,Dozen,C30D
+1517,401,156,193,0.0,M-C30D,Briefs,Women's Panties,Underwear,275,M,Dozen,C30D
 1518,403,156,194,1.0,M-C30K,Briefs,Women's Panties,Underwear,275,M,Dozen,C30K
-1519,405,156,195,,M-C30SD,Briefs,Women's Panties,Underwear,275,M,Dozen,C30SD
-1520,406,156,196,,M-C30V,Briefs,Women's Panties,Underwear,275,M,Dozen,C30V
-1521,407,156,197,,M-C31,Briefs,Women's Panties,Underwear,349,M,Dozen,C31
-1522,408,156,198,,M-C313,Briefs,Women's Panties,Underwear,276,M,Dozen,C313
-1523,410,156,199,,M-C32,Briefs,Women's Panties,Underwear,329,M,Dozen,C32
+1519,405,156,195,0.0,M-C30SD,Briefs,Women's Panties,Underwear,275,M,Dozen,C30SD
+1520,406,156,196,0.0,M-C30V,Briefs,Women's Panties,Underwear,275,M,Dozen,C30V
+1521,407,156,197,0.0,M-C31,Briefs,Women's Panties,Underwear,349,M,Dozen,C31
+1522,408,156,198,0.0,M-C313,Briefs,Women's Panties,Underwear,276,M,Dozen,C313
+1523,410,156,199,0.0,M-C32,Briefs,Women's Panties,Underwear,329,M,Dozen,C32
 1524,411,156,200,50.0,M-C32E,Briefs,Women's Panties,Underwear,304,M,Dozen,C32E
 1525,412,156,201,2.0,M-C46D,Briefs,Women's Panties,Underwear,317,M,Dozen,C46D
-1526,413,156,202,,M-C46K,Briefs,Women's Panties,Underwear,317,M,Dozen,C46K
+1526,413,156,202,0.0,M-C46K,Briefs,Women's Panties,Underwear,317,M,Dozen,C46K
 1527,414,156,203,4.0,M-C46S,Briefs,Women's Panties,Underwear,315,M,Dozen,C46S
-1528,415,156,204,,M-C46SD,Briefs,Women's Panties,Underwear,350,M,Dozen,C46SD
-1529,416,156,205,,M-C46SV,Briefs,Women's Panties,Underwear,346,M,Dozen,C46SV
-1530,417,156,206,,M-C46T,Briefs,Women's Panties,Underwear,311,M,Dozen,C46T
-1531,418,156,207,,M-C46V,Briefs,Women's Panties,Underwear,335,M,Dozen,C46V
+1528,415,156,204,0.0,M-C46SD,Briefs,Women's Panties,Underwear,350,M,Dozen,C46SD
+1529,416,156,205,0.0,M-C46SV,Briefs,Women's Panties,Underwear,346,M,Dozen,C46SV
+1530,417,156,206,0.0,M-C46T,Briefs,Women's Panties,Underwear,311,M,Dozen,C46T
+1531,418,156,207,0.0,M-C46V,Briefs,Women's Panties,Underwear,335,M,Dozen,C46V
 1532,419,156,208,50.0,M-C97,Briefs,Women's Panties,Underwear,237,M,Dozen,C97
 1533,420,156,209,6.0,M-C97P,Briefs,Women's Panties,Underwear,256,M,Dozen,C97P
 1534,421,156,210,48.0,M-C97S,Briefs,Women's Panties,Underwear,256,M,Dozen,C97S
-1535,422,157,0,,M-D31S,Briefs,Women's Panties,Underwear,314,M,Dozen,D31S
+1535,422,157,0,0.0,M-D31S,Briefs,Women's Panties,Underwear,314,M,Dozen,D31S
 1536,423,157,1,10.0,M-D46S,Briefs,Women's Panties,Underwear,317,M,Dozen,D46S
 1537,424,157,2,207.0,M-D46T,Briefs,Women's Panties,Underwear,317,M,Dozen,D46T
 1538,425,157,3,87.0,M-ERK33,Briefs,Men's Briefs,Underwear,572,M,Dozen,ERK33
@@ -1545,20 +1545,20 @@
 1543,430,157,8,1514.0,M-ERK64,Briefs,Men's Briefs,Underwear,528,M,Dozen,ERK64
 1544,431,157,9,83.0,M-ERK64B,Briefs,Men's Briefs,Underwear,579,M,Dozen,ERK64B
 1545,432,157,10,65.0,M-ERK81,Briefs,Men's Briefs,Underwear,484,M,Dozen,ERK81
-1546,433,157,11,,M-F15,Briefs,Women's Panties,Underwear,208,M,Dozen,F15
+1546,433,157,11,0.0,M-F15,Briefs,Women's Panties,Underwear,208,M,Dozen,F15
 1547,434,157,12,293.0,M-F23,Briefs,Women's Panties,Underwear,275,M,Dozen,F23
-1548,435,157,13,,M-F31E,Briefs,Women's Panties,Underwear,347,M,Dozen,F31E
+1548,435,157,13,0.0,M-F31E,Briefs,Women's Panties,Underwear,347,M,Dozen,F31E
 1549,436,157,14,556.0,M-F46,Briefs,Women's Panties,Underwear,317,M,Dozen,F46
 1550,437,157,15,351.0,M-F46S,Briefs,Women's Panties,Underwear,317,M,Dozen,F46S
 1551,438,157,16,432.0,M-F52,Briefs,Women's Panties,Underwear,350,M,Dozen,F52
 1552,439,157,17,1270.0,M-F56,Briefs,Women's Panties,Underwear,372,M,Dozen,F56
-1553,440,157,18,,M-G16T,Briefs,Women's Panties,Underwear,335,M,Dozen,G16T
-1554,441,157,19,,M-G31E,Briefs,Women's Panties,Underwear,371,M,Dozen,G31E
+1553,440,157,18,0.0,M-G16T,Briefs,Women's Panties,Underwear,335,M,Dozen,G16T
+1554,441,157,19,0.0,M-G31E,Briefs,Women's Panties,Underwear,371,M,Dozen,G31E
 1555,442,157,20,1137.0,M-G46,Briefs,Women's Panties,Underwear,355,M,Dozen,G46
 1556,443,157,21,141.0,M-G46E,Briefs,Women's Panties,Underwear,365,M,Dozen,G46E
 1557,444,157,22,202.0,M-G46S,Briefs,Women's Panties,Underwear,380,M,Dozen,G46S
 1558,445,157,23,1.0,M-H46,Briefs,Women's Panties,Underwear,299,M,Dozen,H46
-1559,446,157,24,,M-H46S,Briefs,Women's Panties,Underwear,320,M,Dozen,H46S
+1559,446,157,24,0.0,M-H46S,Briefs,Women's Panties,Underwear,320,M,Dozen,H46S
 1560,447,157,25,1651.0,M-K21,Briefs,Women's Panties,Underwear,410,M,Dozen,K21
 1561,448,157,26,332.0,M-K21E,Briefs,Women's Panties,Underwear,393,M,Dozen,K21E
 1562,450,157,27,1.0,M-K22,Briefs,Women's Panties,Underwear,273,M,Dozen,K22
@@ -1590,14 +1590,14 @@
 1588,486,157,53,1.0,M-K40E,Briefs,Women's Panties,Underwear,323,M,Dozen,K40E
 1589,487,157,54,32.0,M-K411,Briefs,Women's Panties,Underwear,389,M,Dozen,K411
 1590,488,157,55,25.0,M-K412,Briefs,Women's Panties,Underwear,395,M,Dozen,K412
-1591,489,157,56,,M-K414,Briefs,Women's Panties,Underwear,371,M,Dozen,K414
+1591,489,157,56,0.0,M-K414,Briefs,Women's Panties,Underwear,371,M,Dozen,K414
 1592,490,157,57,66.0,M-K418,Briefs,Women's Panties,Underwear,395,M,Dozen,K418
-1593,491,157,58,,M-K418S,Briefs,Women's Panties,Underwear,390,M,Dozen,K418S
+1593,491,157,58,0.0,M-K418S,Briefs,Women's Panties,Underwear,390,M,Dozen,K418S
 1594,492,157,59,51.0,M-K41S,Briefs,Women's Panties,Underwear,465,M,Dozen,K41S
 1595,493,157,60,10.0,M-K42,Briefs,Women's Panties,Underwear,390,M,Dozen,K42
 1596,494,157,61,61.0,M-K420,Briefs,Women's Panties,Underwear,395,M,Dozen,K420
 1597,495,157,62,4.0,M-K421,Briefs,Women's Panties,Underwear,365,M,Dozen,K421
-1598,496,157,63,,M-K422,Briefs,Women's Panties,Underwear,395,M,Dozen,K422
+1598,496,157,63,0.0,M-K422,Briefs,Women's Panties,Underwear,395,M,Dozen,K422
 1599,497,157,64,20.0,M-K424,Briefs,Women's Panties,Underwear,395,M,Dozen,K424
 1600,498,157,65,43.0,M-K425,Briefs,Women's Panties,Underwear,395,M,Dozen,K425
 1601,499,157,66,33.0,M-K426,Briefs,Women's Panties,Underwear,389,M,Dozen,K426
@@ -1609,7 +1609,7 @@
 1607,505,157,72,253.0,M-K4619,Briefs,Women's Panties,Underwear,425,M,Dozen,K4619
 1608,506,157,73,63.0,M-K462,Briefs,Women's Panties,Underwear,395,M,Dozen,K462
 1609,507,157,74,12.0,M-K462S,Briefs,Women's Panties,Underwear,396,M,Dozen,K462S
-1610,508,157,75,,M-K4639,Briefs,Women's Panties,Underwear,415,M,Dozen,K4639
+1610,508,157,75,0.0,M-K4639,Briefs,Women's Panties,Underwear,415,M,Dozen,K4639
 1611,509,157,76,40.0,M-K4653,Briefs,Women's Panties,Underwear,425,M,Dozen,K4653
 1612,510,157,77,48.0,M-K4654,Briefs,Women's Panties,Underwear,425,M,Dozen,K4654
 1613,511,157,78,350.0,M-K4656,Briefs,Women's Panties,Underwear,425,M,Dozen,K4656
@@ -1628,7 +1628,7 @@
 1626,524,157,91,614.0,M-K46T,Briefs,Women's Panties,Underwear,405,M,Dozen,K46T
 1627,525,157,92,151.0,M-K46V,Briefs,Women's Panties,Underwear,410,M,Dozen,K46V
 1628,526,157,93,35.0,M-K475,Briefs,Women's Panties,Underwear,395,M,Dozen,K475
-1629,527,157,94,,M-K480,Briefs,Women's Panties,Underwear,383,M,Dozen,K480
+1629,527,157,94,0.0,M-K480,Briefs,Women's Panties,Underwear,383,M,Dozen,K480
 1630,528,157,95,1.0,M-K485,Briefs,Women's Panties,Underwear,395,M,Dozen,K485
 1631,529,157,96,61.0,M-K498,Briefs,Women's Panties,Underwear,395,M,Dozen,K498
 1632,530,157,97,27.0,M-K502,Briefs,Women's Panties,Underwear,395,M,Dozen,K502
@@ -1646,30 +1646,30 @@
 1644,542,157,109,101.0,M-K68,Briefs,Women's Panties,Underwear,432,M,Dozen,K68
 1645,543,157,110,51.0,M-K68E,Briefs,Women's Panties,Underwear,443,M,Dozen,K68E
 1646,544,157,111,85.0,M-K68T,Briefs,Women's Panties,Underwear,440,M,Dozen,K68T
-1647,545,157,112,,M-K76E,Briefs,Women's Panties,Underwear,431,M,Dozen,K76E
-1648,546,157,113,,M-K77,Briefs,Women's Panties,Underwear,430,M,Dozen,K77
-1649,547,157,114,,M-K77S,Briefs,Women's Panties,Underwear,442,M,Dozen,K77S
-1650,548,157,115,,M-K846,Briefs,Women's Panties,Underwear,444,M,Dozen,K846
+1647,545,157,112,0.0,M-K76E,Briefs,Women's Panties,Underwear,431,M,Dozen,K76E
+1648,546,157,113,0.0,M-K77,Briefs,Women's Panties,Underwear,430,M,Dozen,K77
+1649,547,157,114,0.0,M-K77S,Briefs,Women's Panties,Underwear,442,M,Dozen,K77S
+1650,548,157,115,0.0,M-K846,Briefs,Women's Panties,Underwear,444,M,Dozen,K846
 1651,549,157,116,76.0,M-K846S,Briefs,Women's Panties,Underwear,450,M,Dozen,K846S
 1652,550,157,117,23.0,M-K846T,Briefs,Women's Panties,Underwear,440,M,Dozen,K846T
-1653,551,157,118,,M-K92,Briefs,Women's Panties,Underwear,405,M,Dozen,K92
-1654,552,157,119,,M-K92E,Briefs,Women's Panties,Underwear,437,M,Dozen,K92E
+1653,551,157,118,0.0,M-K92,Briefs,Women's Panties,Underwear,405,M,Dozen,K92
+1654,552,157,119,0.0,M-K92E,Briefs,Women's Panties,Underwear,437,M,Dozen,K92E
 1655,553,157,120,4.0,M-K94,Briefs,Women's Panties,Underwear,240,M,Dozen,K94
-1656,554,157,121,,M-KA946S,Briefs,Women's Panties,Underwear,395,M,Dozen,KA946S
+1656,554,157,121,0.0,M-KA946S,Briefs,Women's Panties,Underwear,395,M,Dozen,KA946S
 1657,555,157,122,76.0,M-KA946T,Briefs,Women's Panties,Underwear,405,M,Dozen,KA946T
 1658,556,157,123,33.0,M-N80,Briefs,Women's Panties,Underwear,336,M,Dozen,N80
 1659,557,157,124,25.0,M-N87,Briefs,Women's Panties,Underwear,324,M,Dozen,N87
 1660,558,157,125,85.0,M-O23E,Briefs,Women's Panties,Underwear,281,M,Dozen,O23E
 1661,559,157,126,65.0,M-O32,Briefs,Women's Panties,Underwear,292,M,Dozen,O32
 1662,560,157,127,18.0,M-O32S,Briefs,Women's Panties,Underwear,335,M,Dozen,O32S
-1663,561,157,128,,M-O352,Briefs,Women's Panties,Underwear,299,M,Dozen,O352
-1664,562,157,129,,M-O356,Briefs,Women's Panties,Underwear,299,M,Dozen,O356
+1663,561,157,128,0.0,M-O352,Briefs,Women's Panties,Underwear,299,M,Dozen,O352
+1664,562,157,129,0.0,M-O356,Briefs,Women's Panties,Underwear,299,M,Dozen,O356
 1665,563,157,130,3.0,M-O356S,Briefs,Women's Panties,Underwear,299,M,Dozen,O356S
-1666,564,157,131,,M-O357,Briefs,Women's Panties,Underwear,287,M,Dozen,O357
-1667,565,157,132,,M-O360,Briefs,Women's Panties,Underwear,311,M,Dozen,O360
-1668,566,157,133,,M-O362,Briefs,Women's Panties,Underwear,293,M,Dozen,O362
-1669,567,157,134,,M-O367,Briefs,Women's Panties,Underwear,299,M,Dozen,O367
-1670,568,157,135,,M-R461,Briefs,Women's Panties,Underwear,300,M,Dozen,R461
+1666,564,157,131,0.0,M-O357,Briefs,Women's Panties,Underwear,287,M,Dozen,O357
+1667,565,157,132,0.0,M-O360,Briefs,Women's Panties,Underwear,311,M,Dozen,O360
+1668,566,157,133,0.0,M-O362,Briefs,Women's Panties,Underwear,293,M,Dozen,O362
+1669,567,157,134,0.0,M-O367,Briefs,Women's Panties,Underwear,299,M,Dozen,O367
+1670,568,157,135,0.0,M-R461,Briefs,Women's Panties,Underwear,300,M,Dozen,R461
 1671,569,157,136,85.0,M-R791,Briefs,Women's Panties,Underwear,299,M,Dozen,R791
 1672,570,157,137,1.0,M-R801,Briefs,Women's Panties,Underwear,300,M,Dozen,R801
 1673,571,157,138,3.0,M-R901,Briefs,Women's Panties,Underwear,347,M,Dozen,R901
@@ -1688,12 +1688,12 @@
 1686,616,157,151,622.0,M-U29,Briefs,Women's Panties,Underwear,304,M,Dozen,U29
 1687,617,157,152,3.0,M-U31,Briefs,Women's Panties,Underwear,341,M,Dozen,U31
 1688,618,157,153,560.0,M-U35,Briefs,Women's Panties,Underwear,319,M,Dozen,U35
-1689,619,157,154,,M-U98E,Briefs,Women's Panties,Underwear,311,M,Dozen,U98E
+1689,619,157,154,0.0,M-U98E,Briefs,Women's Panties,Underwear,311,M,Dozen,U98E
 1690,620,157,155,170.0,M-Z23,Briefs,Women's Panties,Underwear,287,M,Dozen,Z23
-1691,621,157,156,,M-Z30D,Briefs,Women's Panties,Underwear,269,M,Dozen,Z30D
+1691,621,157,156,0.0,M-Z30D,Briefs,Women's Panties,Underwear,269,M,Dozen,Z30D
 1692,622,157,157,30.0,M-Z31,Briefs,Women's Panties,Underwear,305,M,Dozen,Z31
 1693,623,157,158,141.0,M-Z31E,Briefs,Women's Panties,Underwear,304,M,Dozen,Z31E
-1694,624,157,159,,M-Z32,Briefs,Women's Panties,Underwear,293,M,Dozen,Z32
+1694,624,157,159,0.0,M-Z32,Briefs,Women's Panties,Underwear,293,M,Dozen,Z32
 1695,630,157,160,50.0,M-Z32S,Briefs,Women's Panties,Underwear,294,M,Dozen,Z32S
 1696,635,157,161,136.0,M-Z46,Briefs,Women's Panties,Underwear,300,M,Dozen,Z46
 1697,636,157,162,95.0,M-Z46S,Briefs,Women's Panties,Underwear,341,M,Dozen,Z46S
@@ -1709,7 +1709,7 @@
 1707,657,157,172,105.0,S-A4674,Briefs,Women's Panties,Underwear,245,S,Dozen,A4674
 1708,658,157,173,170.0,S-A4675,Briefs,Women's Panties,Underwear,296,S,Dozen,A4675
 1709,659,157,174,29.0,S-A46S,Briefs,Women's Panties,Underwear,270,S,Dozen,A46S
-1710,660,157,175,,S-A52,Briefs,Women's Panties,Underwear,371,S,Dozen,A52
+1710,660,157,175,0.0,S-A52,Briefs,Women's Panties,Underwear,371,S,Dozen,A52
 1711,661,157,176,12.0,S-A52S,Briefs,Women's Panties,Underwear,360,S,Dozen,A52S
 1712,662,157,177,7.0,S-A7800,Briefs,Women's Panties,Underwear,252,S,Dozen,A7800
 1713,663,157,178,10.0,S-A7800S,Briefs,Women's Panties,Underwear,251,S,Dozen,A7800S
@@ -1726,7 +1726,7 @@
 1724,686,157,189,58.0,S-F52S,Briefs,Women's Panties,Underwear,310,S,Dozen,F52S
 1725,687,157,190,695.0,S-F56,Briefs,Women's Panties,Underwear,290,S,Dozen,F56
 1726,688,157,191,622.0,S-G46,Briefs,Women's Panties,Underwear,315,S,Dozen,G46
-1727,689,157,192,,S-G77,Briefs,Women's Panties,Underwear,314,S,Dozen,G77
+1727,689,157,192,0.0,S-G77,Briefs,Women's Panties,Underwear,314,S,Dozen,G77
 1728,690,157,193,60.0,S-H46,Briefs,Women's Panties,Underwear,269,S,Dozen,H46
 1729,691,157,194,20.0,S-H46S,Briefs,Women's Panties,Underwear,280,S,Dozen,H46S
 1730,692,157,195,1098.0,S-K21,Briefs,Women's Panties,Underwear,365,S,Dozen,K21
@@ -1753,7 +1753,7 @@
 1751,713,158,5,390.0,S-K46T,Briefs,Women's Panties,Underwear,350,S,Dozen,K46T
 1752,714,158,6,400.0,S-N79,Briefs,Women's Panties,Underwear,285,S,Dozen,N79
 1753,715,158,7,97.0,S-N80,Briefs,Women's Panties,Underwear,265,S,Dozen,N80
-1754,716,158,8,,S-N90,Briefs,Women's Panties,Underwear,227,S,Dozen,N90
+1754,716,158,8,0.0,S-N90,Briefs,Women's Panties,Underwear,227,S,Dozen,N90
 1755,717,158,9,30.0,S-R461,Briefs,Women's Panties,Underwear,285,S,Dozen,R461
 1756,718,158,10,74.0,S-R791,Briefs,Women's Panties,Underwear,280,S,Dozen,R791
 1757,719,158,11,53.0,S-R801,Briefs,Women's Panties,Underwear,260,S,Dozen,R801
@@ -1769,12 +1769,12 @@
 1767,781,158,21,305.0,XL-A4607,Briefs,Women's Panties,Underwear,413,XL,Dozen,A4607
 1768,782,158,22,5.0,XL-A4607S,Briefs,Women's Panties,Underwear,330,XL,Dozen,A4607S
 1769,783,158,23,80.0,XL-A46S,Briefs,Women's Panties,Underwear,449,XL,Dozen,A46S
-1770,784,158,24,,XL-BB31S,Briefs,Women's Panties,Underwear,490,XL,Dozen,BB31S
+1770,784,158,24,0.0,XL-BB31S,Briefs,Women's Panties,Underwear,490,XL,Dozen,BB31S
 1771,785,158,25,100.0,XL-BB31T,Briefs,Women's Panties,Underwear,480,XL,Dozen,BB31T
 1772,786,158,26,54.0,XL-BB46T,Briefs,Women's Panties,Underwear,450,XL,Dozen,BB46T
 1773,803,158,27,70.0,XL-C32E,Briefs,Women's Panties,Underwear,426,XL,Dozen,C32E
 1774,804,158,28,526.0,XL-D46T,Briefs,Women's Panties,Underwear,470,XL,Dozen,D46T
-1775,805,158,29,,XL-ERK33,Briefs,Men's Briefs,Underwear,696,XL,Dozen,ERK33
+1775,805,158,29,0.0,XL-ERK33,Briefs,Men's Briefs,Underwear,696,XL,Dozen,ERK33
 1776,806,158,30,4022.0,XL-ERK61,Briefs,Men's Briefs,Underwear,575,XL,Dozen,ERK61
 1777,807,158,31,23.0,XL-ERK63,Briefs,Men's Briefs,Underwear,635,XL,Dozen,ERK63
 1778,808,158,32,723.0,XL-ERK64,Briefs,Men's Briefs,Underwear,589,XL,Dozen,ERK64
@@ -1798,7 +1798,7 @@
 1796,826,158,50,970.0,XL-K25,Briefs,Women's Panties,Underwear,564,XL,Dozen,K25
 1797,827,158,51,19.0,XL-K25S,Briefs,Women's Panties,Underwear,617,XL,Dozen,K25S
 1798,828,158,52,104.0,XL-K25T,Briefs,Women's Panties,Underwear,641,XL,Dozen,K25T
-1799,829,158,53,,XL-K26T,Briefs,Women's Panties,Underwear,572,XL,Dozen,K26T
+1799,829,158,53,0.0,XL-K26T,Briefs,Women's Panties,Underwear,572,XL,Dozen,K26T
 1800,830,158,54,2967.0,XL-K29,Briefs,Women's Panties,Underwear,475,XL,Dozen,K29
 1801,831,158,55,2150.0,XL-K30,Briefs,Women's Panties,Underwear,509,XL,Dozen,K30
 1802,832,158,56,1721.0,XL-K31,Briefs,Women's Panties,Underwear,553,XL,Dozen,K31
@@ -1809,13 +1809,13 @@
 1807,837,158,61,13.0,XL-K32S,Briefs,Women's Panties,Underwear,575,XL,Dozen,K32S
 1808,838,158,62,165.0,XL-K405,Briefs,Women's Panties,Underwear,539,XL,Dozen,K405
 1809,839,158,63,242.0,XL-K406,Briefs,Women's Panties,Underwear,528,XL,Dozen,K406
-1810,840,158,64,,XL-K406S,Briefs,Women's Panties,Underwear,530,XL,Dozen,K406S
+1810,840,158,64,0.0,XL-K406S,Briefs,Women's Panties,Underwear,530,XL,Dozen,K406S
 1811,841,158,65,290.0,XL-K407,Briefs,Women's Panties,Underwear,477,XL,Dozen,K407
 1812,842,158,66,38.0,XL-K408,Briefs,Women's Panties,Underwear,528,XL,Dozen,K408
-1813,843,158,67,,XL-K40E,Briefs,Women's Panties,Underwear,380,XL,Dozen,K40E
+1813,843,158,67,0.0,XL-K40E,Briefs,Women's Panties,Underwear,380,XL,Dozen,K40E
 1814,844,158,68,115.0,XL-K410,Briefs,Women's Panties,Underwear,528,XL,Dozen,K410
 1815,845,158,69,70.0,XL-K412,Briefs,Women's Panties,Underwear,528,XL,Dozen,K412
-1816,846,158,70,,XL-K415,Briefs,Women's Panties,Underwear,528,XL,Dozen,K415
+1816,846,158,70,0.0,XL-K415,Briefs,Women's Panties,Underwear,528,XL,Dozen,K415
 1817,847,158,71,100.0,XL-K416,Briefs,Women's Panties,Underwear,528,XL,Dozen,K416
 1818,848,158,72,20.0,XL-K418,Briefs,Women's Panties,Underwear,528,XL,Dozen,K418
 1819,849,158,73,73.0,XL-K41S,Briefs,Women's Panties,Underwear,665,XL,Dozen,K41S
@@ -1836,8 +1836,8 @@
 1834,864,158,88,1706.0,XL-K46E,Briefs,Women's Panties,Underwear,535,XL,Dozen,K46E
 1835,865,158,89,2182.0,XL-K46S,Briefs,Women's Panties,Underwear,620,XL,Dozen,K46S
 1836,866,158,90,2077.0,XL-K46T,Briefs,Women's Panties,Underwear,561,XL,Dozen,K46T
-1837,867,158,91,,XL-K475,Briefs,Women's Panties,Underwear,528,XL,Dozen,K475
-1838,868,158,92,,XL-K485,Briefs,Women's Panties,Underwear,528,XL,Dozen,K485
+1837,867,158,91,0.0,XL-K475,Briefs,Women's Panties,Underwear,528,XL,Dozen,K475
+1838,868,158,92,0.0,XL-K485,Briefs,Women's Panties,Underwear,528,XL,Dozen,K485
 1839,869,158,93,1.0,XL-K49,Briefs,Women's Panties,Underwear,570,XL,Dozen,K49
 1840,870,158,94,40.0,XL-K502,Briefs,Women's Panties,Underwear,516,XL,Dozen,K502
 1841,871,158,95,53.0,XL-K503,Briefs,Women's Panties,Underwear,516,XL,Dozen,K503
@@ -1848,10 +1848,10 @@
 1846,876,158,100,10.0,XL-K52S,Briefs,Women's Panties,Underwear,630,XL,Dozen,K52S
 1847,877,158,101,10.0,XL-K532,Briefs,Women's Panties,Underwear,516,XL,Dozen,K532
 1848,878,158,102,2.0,XL-K68,Briefs,Women's Panties,Underwear,589,XL,Dozen,K68
-1849,879,158,103,,XL-K77,Briefs,Women's Panties,Underwear,607,XL,Dozen,K77
-1850,880,158,104,,XL-K92E,Briefs,Women's Panties,Underwear,553,XL,Dozen,K92E
+1849,879,158,103,0.0,XL-K77,Briefs,Women's Panties,Underwear,607,XL,Dozen,K77
+1850,880,158,104,0.0,XL-K92E,Briefs,Women's Panties,Underwear,553,XL,Dozen,K92E
 1851,881,158,105,3.0,XL-K94,Briefs,Women's Panties,Underwear,326,XL,Dozen,K94
-1852,882,158,106,,XL-K98E,Briefs,Women's Panties,Underwear,444,XL,Dozen,K98E
+1852,882,158,106,0.0,XL-K98E,Briefs,Women's Panties,Underwear,444,XL,Dozen,K98E
 1853,883,158,107,81.0,XL-KA946S,Briefs,Women's Panties,Underwear,520,XL,Dozen,KA946S
 1854,884,158,108,10.0,XL-KA946T,Briefs,Women's Panties,Underwear,531,XL,Dozen,KA946T
 1855,886,158,109,37.0,XL-U23,Briefs,Women's Panties,Underwear,384,XL,Dozen,U23
@@ -1885,11 +1885,11 @@
 1883,928,158,137,44.0,XXL-K32S,Briefs,Women's Panties,Underwear,628,XXL,Dozen,K32S
 1884,929,158,138,728.0,XXL-K32T,Briefs,Women's Panties,Underwear,570,XXL,Dozen,K32T
 1885,930,158,139,100.0,XXL-K40E,Briefs,Women's Panties,Underwear,428,XXL,Dozen,K40E
-1886,931,158,140,,XXL-K43,Briefs,Women's Panties,Underwear,576,XXL,Dozen,K43
+1886,931,158,140,0.0,XXL-K43,Briefs,Women's Panties,Underwear,576,XXL,Dozen,K43
 1887,932,158,141,4166.0,XXL-K46,Briefs,Women's Panties,Underwear,691,XXL,Dozen,K46
-1888,933,158,142,,XXL-K4619,Briefs,Women's Panties,Underwear,580,XXL,Dozen,K4619
-1889,934,158,143,,XXL-K4627,Briefs,Women's Panties,Underwear,580,XXL,Dozen,K4627
-1890,935,158,144,,XXL-K4639,Briefs,Women's Panties,Underwear,580,XXL,Dozen,K4639
+1888,933,158,142,0.0,XXL-K4619,Briefs,Women's Panties,Underwear,580,XXL,Dozen,K4619
+1889,934,158,143,0.0,XXL-K4627,Briefs,Women's Panties,Underwear,580,XXL,Dozen,K4627
+1890,935,158,144,0.0,XXL-K4639,Briefs,Women's Panties,Underwear,580,XXL,Dozen,K4639
 1891,936,158,145,469.0,XXL-K4653,Briefs,Women's Panties,Underwear,580,XXL,Dozen,K4653
 1892,937,158,146,210.0,XXL-K4654,Briefs,Women's Panties,Underwear,580,XXL,Dozen,K4654
 1893,938,158,147,871.0,XXL-K4656,Briefs,Women's Panties,Underwear,580,XXL,Dozen,K4656
@@ -1904,8 +1904,8 @@
 1902,947,158,156,3.0,XXL-K52S,Briefs,Women's Panties,Underwear,684,XXL,Dozen,K52S
 1903,948,158,157,6.0,XXL-K52T,Briefs,Women's Panties,Underwear,660,XXL,Dozen,K52T
 1904,949,158,158,7.0,XXL-K68,Briefs,Women's Panties,Underwear,632,XXL,Dozen,K68
-1905,950,158,159,,XXL-K77,Briefs,Women's Panties,Underwear,662,XXL,Dozen,K77
-1906,951,158,160,,XXL-K92,Briefs,Women's Panties,Underwear,583,XXL,Dozen,K92
+1905,950,158,159,0.0,XXL-K77,Briefs,Women's Panties,Underwear,662,XXL,Dozen,K77
+1906,951,158,160,0.0,XXL-K92,Briefs,Women's Panties,Underwear,583,XXL,Dozen,K92
 1907,952,158,161,4.0,XXL-K94,Briefs,Women's Panties,Underwear,416,XXL,Dozen,K94
 1908,953,158,162,25.0,XXL-KA946T,Briefs,Women's Panties,Underwear,626,XXL,Dozen,KA946T
 1909,965,158,163,491.0,XXL-U35,Briefs,Women's Panties,Underwear,473,XXL,Dozen,U35
@@ -1917,7 +1917,7 @@
 1915,973,158,169,329.0,3XL-GB32,Briefs,Women's Panties,Underwear,610,3XL,Dozen,GB32
 1916,974,158,170,1405.0,3XL-K21,Briefs,Women's Panties,Underwear,650,3XL,Dozen,K21
 1917,975,158,171,1588.0,3XL-K21E,Briefs,Women's Panties,Underwear,590,3XL,Dozen,K21E
-1918,976,158,172,,3XL-K22,Briefs,Women's Panties,Underwear,550,3XL,Dozen,K22
+1918,976,158,172,0.0,3XL-K22,Briefs,Women's Panties,Underwear,550,3XL,Dozen,K22
 1919,977,158,173,1.0,3XL-K22E,Briefs,Women's Panties,Underwear,553,3XL,Dozen,K22E
 1920,978,158,174,723.0,3XL-K23,Briefs,Women's Panties,Underwear,537,3XL,Dozen,K23
 1921,979,158,175,1118.0,3XL-K29,Briefs,Women's Panties,Underwear,584,3XL,Dozen,K29
@@ -1959,7 +1959,7 @@
 1957,1024,159,0,40.0,L-G31,Briefs,Women's Panties,Underwear,351,L,Dozen,G31
 1958,1025,159,1,10.0,S-R79,Briefs,Women's Panties,Underwear,285,S,Dozen,R79
 1959,1026,159,2,113.0,S-K4673,Briefs,Women's Panties,Underwear,360,S,Dozen,K4673
-1960,1027,159,3,,3-ERK81,Briefs,Boys' Briefs,Underwear,316,M,Dozen,ERK81
+1960,1027,159,3,0.0,3-ERK81,Briefs,Boys' Briefs,Underwear,316,M,Dozen,ERK81
 1961,1029,159,4,1.0,XL-K425,Briefs,Women's Panties,Underwear,528,XL,Dozen,K425
 1962,1033,159,5,6.0,M-U32,Briefs,Women's Panties,Underwear,324,M,Dozen,U32
 1963,1035,159,6,94.0,M-K410,Briefs,Women's Panties,Underwear,395,M,Dozen,K410
@@ -3756,7 +3756,7 @@
 3754,3866,167,109,30.0,L-B4643W,Briefs,Women's Panties,Underwear,345,L,Dozen,B4643W
 3755,3867,167,110,20.0,L-B4643SY,Briefs,Women's Panties,Underwear,345,L,Dozen,B4643SY
 3756,3868,167,111,6.0,L-B4643SZ,Briefs,Women's Panties,Underwear,370,L,Dozen,B4643SZ
-3757,3869,167,112,,L-B4643SU,Briefs,Women's Panties,Underwear,445,L,Dozen,B4643SU
+3757,3869,167,112,0.0,L-B4643SU,Briefs,Women's Panties,Underwear,445,L,Dozen,B4643SU
 3758,3870,167,113,4.0,L-B4643SW,Briefs,Women's Panties,Underwear,355,L,Dozen,B4643SW
 3759,3871,167,114,30.0,L-B4643Y,Briefs,Women's Panties,Underwear,350,L,Dozen,B4643Y
 3760,3872,167,115,30.0,L-B4643Z,Briefs,Women's Panties,Underwear,360,L,Dozen,B4643Z
@@ -3874,7 +3874,7 @@
 3872,4037,168,16,19.0,S-AG46S,Briefs,Women's Panties,Underwear,365,S,Dozen,AG46S
 3873,4038,168,17,19.0,5XL-K23E,Briefs,Women's Panties,Underwear,680,5XL,Dozen,K23E
 3874,4039,168,18,39.0,6XL-K23E,Briefs,Women's Panties,Underwear,750,6XL,Dozen,K23E
-3875,4041,168,19,,6XL-K32E,Briefs,Women's Panties,Underwear,830,6XL,Dozen,K32E
+3875,4041,168,19,0.0,6XL-K32E,Briefs,Women's Panties,Underwear,830,6XL,Dozen,K32E
 3876,4044,168,20,5.0,S-B41D,Briefs,Women's Panties,Underwear,235,S,Dozen,B41D
 3877,4045,168,21,4.0,XL-B41D,Briefs,Women's Panties,Underwear,315,XL,Dozen,B41D
 3878,4046,168,22,11.0,L-B41SD,Briefs,Women's Panties,Underwear,280,L,Dozen,B41SD
@@ -3989,12 +3989,12 @@
 3987,4321,168,131,50.0,L-B4649S,Briefs,Women's Panties,Underwear,320,L,Dozen,B4649S
 3988,4322,168,132,40.0,XL-B4649S,Briefs,Women's Panties,Underwear,350,XL,Dozen,B4649S
 3989,4325,168,133,17.0,S-B46SDCB,Briefs,Women's Panties,Underwear,260,S,Dozen,B46SDCB
-3990,4330,168,134,,S-G46S,Briefs,Women's Panties,Underwear,330,S,Dozen,G46S
+3990,4330,168,134,0.0,S-G46S,Briefs,Women's Panties,Underwear,330,S,Dozen,G46S
 3991,4332,168,135,5.0,M-B41D,Briefs,Men's Briefs,Underwear,255,M,Dozen,B41D
 3992,4335,168,136,20.0,M-B86,Briefs,Women's Panties,Underwear,300,M,Dozen,B86
 3993,4336,168,137,10.0,2-B3099KD,Briefs,Women's Panties,Underwear,200,S,Dozen,B3099KD
-3994,4337,168,138,,L-AH44,Briefs,Women's Panties,Underwear,305,L,Dozen,AH44
-3995,4340,168,139,,XL-M946,Briefs,Women's Panties,Underwear,475,XL,Dozen,M946
+3994,4337,168,138,0.0,L-AH44,Briefs,Women's Panties,Underwear,305,L,Dozen,AH44
+3995,4340,168,139,0.0,XL-M946,Briefs,Women's Panties,Underwear,475,XL,Dozen,M946
 3996,4352,168,140,10.0,XL-AH44D,Briefs,Women's Panties,Underwear,320,XL,Dozen,AH44D
 3997,4354,168,141,95.0,S-B46DH,Briefs,Women's Panties,Underwear,220,S,Dozen,B46DH
 3998,4355,168,142,143.0,L-B46DH,Briefs,Women's Panties,Underwear,295,L,Dozen,B46DH
@@ -4014,7 +4014,7 @@
 4012,4378,168,156,96.0,XL-B4628S,Briefs,Women's Panties,Underwear,350,XL,Dozen,B4628S
 4013,4383,168,157,71.0,3XL-S4628S,Briefs,Women's Panties,Underwear,580,3XL,Dozen,S4628S
 4014,4387,168,158,47.0,XL-S86,Briefs,Women's Panties,Underwear,505,XL,Dozen,S86
-4015,4392,168,159,,L-B41D,Briefs,Women's Panties,Underwear,305,L,Dozen,B41D
+4015,4392,168,159,0.0,L-B41D,Briefs,Women's Panties,Underwear,305,L,Dozen,B41D
 4016,4396,168,160,160.0,M-ERS61,Briefs,Men's Briefs,Underwear,505,M,Dozen,ERS61
 4017,4397,168,161,165.0,L-ERS61,Briefs,Men's Briefs,Underwear,565,L,Dozen,ERS61
 4018,4398,168,162,165.0,XL-ERS61,Briefs,Men's Briefs,Underwear,590,XL,Dozen,ERS61
@@ -4028,19 +4028,19 @@
 4026,4406,168,170,120.0,L-ERK46C,Briefs,Men's Briefs,Underwear,645,L,Dozen,ERK46C
 4027,4407,168,171,130.0,XL-ERK46C,Briefs,Men's Briefs,Underwear,690,XL,Dozen,ERK46C
 4028,4422,168,172,15.0,L-D46D,Briefs,Women's Panties,Underwear,285,L,Dozen,D46D
-4029,2059,1,44,,L-K462S,Briefs,Women's Panties,Underwear,475,L,Dozen,K462S
+4029,2059,1,44,0.0,L-K462S,Briefs,Women's Panties,Underwear,475,L,Dozen,K462S
 4030,2572,1,45,58.0,S-EE1006,Briefs,Women's Panties,Underwear,286,S,Dozen,EE1006
 4031,3653,1,46,1.0,4046-S6D666,Regular-Over the Calf,Men's Socks,Socks,935,40-46,Dozen,S6D666
 4032,70,1,47,1.0,2-BX61A,Boxers,Boys' Briefs,Underwear,47,S,Single Unit,BX61A
-4033,2631,1,48,,S-TA4607,Thongs,Women's Panties,Underwear,156,S,Dozen,TA4607
-4034,2633,1,49,,M-TEEB81,Thongs,Women's Panties,Underwear,164,M,Dozen,TEEB81
-4035,75,1,50,,2-ERK81,Briefs,Boys' Briefs,Underwear,233,S,Dozen,ERK81
-4036,2635,1,51,,M-THB85,Thongs,Women's Panties,Underwear,159,M,Dozen,THB85
-4037,2636,1,52,,M-THB85S,Thongs,Women's Panties,Underwear,162,M,Dozen,THB85S
-4038,2637,1,53,,M-TIB83,Thongs,Women's Panties,Underwear,112,M,Dozen,TIB83
-4039,4171,1,54,,SM-ATL4661,Undershirts,Women's Undershirts,Underwear,745,S-M,Dozen,ATL4661
-4040,2644,1,55,,XL-W1215,Briefs,Women's Panties,Underwear,278,XL,Dozen,W1215
-4041,2645,1,56,,XXL-EE782814S,Briefs,Women's Panties,Underwear,492,XXL,Dozen,EE782814S
+4033,2631,1,48,0.0,S-TA4607,Thongs,Women's Panties,Underwear,156,S,Dozen,TA4607
+4034,2633,1,49,0.0,M-TEEB81,Thongs,Women's Panties,Underwear,164,M,Dozen,TEEB81
+4035,75,1,50,0.0,2-ERK81,Briefs,Boys' Briefs,Underwear,233,S,Dozen,ERK81
+4036,2635,1,51,0.0,M-THB85,Thongs,Women's Panties,Underwear,159,M,Dozen,THB85
+4037,2636,1,52,0.0,M-THB85S,Thongs,Women's Panties,Underwear,162,M,Dozen,THB85S
+4038,2637,1,53,0.0,M-TIB83,Thongs,Women's Panties,Underwear,112,M,Dozen,TIB83
+4039,4171,1,54,0.0,SM-ATL4661,Undershirts,Women's Undershirts,Underwear,745,S-M,Dozen,ATL4661
+4040,2644,1,55,0.0,XL-W1215,Briefs,Women's Panties,Underwear,278,XL,Dozen,W1215
+4041,2645,1,56,0.0,XXL-EE782814S,Briefs,Women's Panties,Underwear,492,XXL,Dozen,EE782814S
 4042,4183,1,57,100.0,S-BX46H,Boxers,Men's Briefs,Underwear,55,S,Single Unit,BX46H
 4043,4184,1,58,100.0,M-BX46H,Briefs,Men's Briefs,Underwear,65,M,Single Unit,BX46H
 4044,4185,1,59,100.0,L-BX46H,Boxers,Men's Briefs,Underwear,70,L,Dozen,BX46H
@@ -4052,19 +4052,19 @@
 4050,1634,1,65,1.0,L-BX602,Boxers,Men's Briefs,Underwear,72,L,Single Unit,BX602
 4051,4196,1,66,100.0,M-BX46KH,Boxers,Men's Briefs,Underwear,70,M,Single Unit,BX46KH
 4052,3186,1,67,30.0,XL-AG40PD,Briefs,Women's Panties,Underwear,395,XL,Dozen,AG40PD
-4053,4211,1,68,,S-SLP4668I,Slips,Men's Briefs,Underwear,45,S,Single Unit,SLP4668I
+4053,4211,1,68,0.0,S-SLP4668I,Slips,Men's Briefs,Underwear,45,S,Single Unit,SLP4668I
 4054,4212,1,69,10.0,S-SLP4668SI,Slips,Men's Briefs,Underwear,45,S,Single Unit,SLP4668SI
 4055,4213,1,70,10.0,M-SLP4668I,Slips,Men's Briefs,Underwear,50,M,Single Unit,SLP4668I
 4056,4214,1,71,10.0,M-SLP4668SI,Slips,Men's Briefs,Underwear,50,M,Single Unit,SLP4668SI
 4057,4217,1,72,20.0,XL-SLP4668I,Slips,Men's Briefs,Underwear,55,XL,Single Unit,SLP4668I
-4058,2175,1,73,,M-K56T,Briefs,Women's Panties,Underwear,396,M,Dozen,K56T
-4059,644,1,74,,S-3102,Undershirts,Women's Undershirts,Underwear,84,S,Single Unit,3102
+4058,2175,1,73,0.0,M-K56T,Briefs,Women's Panties,Underwear,396,M,Dozen,K56T
+4059,644,1,74,0.0,S-3102,Undershirts,Women's Undershirts,Underwear,84,S,Single Unit,3102
 4060,4240,1,75,100.0,S-BX4668A,Boxers,Men's Briefs,Underwear,65,S,Dozen,BX4668A
 4061,4241,1,76,100.0,S-BX4668SA,Boxers,Men's Briefs,Underwear,65,S,Dozen,BX4668SA
 4062,152,1,77,1.0,L-BX17C2,Boxers,Men's Briefs,Underwear,67,L,Single Unit,BX17C2
 4063,4248,1,78,10.0,M-ERK30,Briefs,Men's Briefs,Underwear,490,M,Dozen,ERK30
-4064,666,1,79,,S-BX17C2,Boxers,Men's Briefs,Underwear,53,S,Single Unit,BX17C2
-4065,667,1,80,,S-BX17S2,Boxers,Men's Briefs,Underwear,55,S,Single Unit,BX17S2
+4064,666,1,79,0.0,S-BX17C2,Boxers,Men's Briefs,Underwear,53,S,Single Unit,BX17C2
+4065,667,1,80,0.0,S-BX17S2,Boxers,Men's Briefs,Underwear,55,S,Single Unit,BX17S2
 4066,3740,1,81,10.0,M-171S,Undershirts,Men's Undershirts,Underwear,1040,M,Dozen,171S
 4067,4249,1,82,10.0,L-ERK30,Briefs,Men's Briefs,Underwear,275,L,Dozen,ERK30
 4068,674,1,83,1.0,S-BX46CB,Boxers,Men's Briefs,Underwear,71,S,Single Unit,BX46CB
@@ -4092,24 +4092,24 @@
 4090,1234,1,105,1.0,M-K430,Briefs,Women's Panties,Underwear,395,M,Dozen,K430
 4091,1239,1,106,1.0,XL-K22,Briefs,Women's Panties,Underwear,443,XL,Dozen,K22
 4092,4317,1,107,60.0,L-BS46SCB,Briefs,Women's Panties,Underwear,400,L,Dozen,BS46SCB
-4093,228,1,108,,L-K410,Briefs,Women's Panties,Underwear,475,L,Dozen,K410
-4094,4339,1,109,,S-BX46SK,Boxers,Men's Briefs,Underwear,65,S,Single Unit,BX46SK
+4093,228,1,108,0.0,L-K410,Briefs,Women's Panties,Underwear,475,L,Dozen,K410
+4094,4339,1,109,0.0,S-BX46SK,Boxers,Men's Briefs,Underwear,65,S,Single Unit,BX46SK
 4095,4341,1,110,10.0,S-BX46KK,Boxers,Men's Briefs,Underwear,65,S,Single Unit,BX46KK
 4096,3836,1,111,10.0,3XL-S4616S,Briefs,Women's Panties,Underwear,585,3XL,Dozen,S4616S
 4097,4349,1,112,10.0,XL-SLP46CI,Slips,Men's Briefs,Underwear,60,XL,Single Unit,SLP46CI
 4098,3838,1,113,10.0,3XL-S4616SV,Briefs,Women's Panties,Underwear,630,3XL,Dozen,S4616SV
-4099,4350,31,169,,L-B46D,Briefs,Men's Briefs,Underwear,320,L,Dozen,B46D
-4100,4351,31,170,,S-TB86,Thongs,Women's Panties,Underwear,160,S,Dozen,TB86
+4099,4350,31,169,0.0,L-B46D,Briefs,Men's Briefs,Underwear,320,L,Dozen,B46D
+4100,4351,31,170,0.0,S-TB86,Thongs,Women's Panties,Underwear,160,S,Dozen,TB86
 4101,3329,31,171,30.0,S-TB4619S,Thongs,Women's Panties,Underwear,135,S,Dozen,TB4619S
 4102,3330,31,172,30.0,S-TB4619SY,Thongs,Women's Panties,Underwear,145,S,Dozen,TB4619SY
 4103,4353,31,173,10.0,XL-ERK30,Briefs,Men's Briefs,Underwear,590,XL,Dozen,ERK30
 4104,3845,31,174,10.0,L-S4616SV,Briefs,Women's Panties,Underwear,460,L,Dozen,S4616SV
 4105,3846,31,175,30.0,L-S4616V,Briefs,Women's Panties,Underwear,450,L,Dozen,S4616V
-4106,776,31,176,,XL-4203,Undershirts,Women's Undershirts,Underwear,140,XL,Single Unit,4203
+4106,776,31,176,0.0,XL-4203,Undershirts,Women's Undershirts,Underwear,140,XL,Single Unit,4203
 4107,3853,31,177,10.0,XL-S4616SV,Briefs,Women's Panties,Underwear,505,XL,Dozen,S4616SV
 4108,3854,31,178,30.0,XL-S4616V,Briefs,Women's Panties,Underwear,455,XL,Dozen,S4616V
 4109,3859,31,179,10.0,XXL-S4616SV,Briefs,Women's Panties,Underwear,570,XXL,Dozen,S4616SV
-4110,276,31,180,,L-K503,Briefs,Women's Panties,Underwear,456,L,Dozen,K503
+4110,276,31,180,0.0,L-K503,Briefs,Women's Panties,Underwear,456,L,Dozen,K503
 4111,3860,31,181,30.0,XXL-S4616V,Briefs,Women's Panties,Underwear,530,XXL,Dozen,S4616V
 4112,790,31,182,1.0,XL-BX17S2,Boxers,Men's Briefs,Underwear,80,XL,Single Unit,BX17S2
 4113,4375,31,183,3.0,M-TANGA KAMP,Thongs,Women's Panties,Underwear,185,M,Dozen,TANGA KAMP
@@ -4120,12 +4120,12 @@
 4118,798,31,188,2.0,XL-BX46CB,Boxers,Men's Briefs,Underwear,76,XL,Single Unit,BX46CB
 4119,4381,31,189,400.0,XL-S4628S,Briefs,Men's Briefs,Underwear,400,XL,Dozen,S4628S
 4120,4382,31,190,156.0,XXL-S4628S,Briefs,Women's Panties,Underwear,495,XXL,Dozen,S4628S
-4121,801,31,191,,XL-BX64P,Boxers,Men's Briefs,Underwear,78,XL,Single Unit,BX64P
-4122,4393,31,192,,XXL-207,Undershirts,Women's Undershirts,Underwear,1150,XXL,Dozen,207
-4123,4394,31,193,,M-199,Undershirts,Women's Undershirts,Underwear,1020,M,Dozen,199
-4124,1838,31,194,,L-K551,Briefs,Women's Panties,Underwear,450,L,Dozen,K551
+4121,801,31,191,0.0,XL-BX64P,Boxers,Men's Briefs,Underwear,78,XL,Single Unit,BX64P
+4122,4393,31,192,0.0,XXL-207,Undershirts,Women's Undershirts,Underwear,1150,XXL,Dozen,207
+4123,4394,31,193,0.0,M-199,Undershirts,Women's Undershirts,Underwear,1020,M,Dozen,199
+4124,1838,31,194,0.0,L-K551,Briefs,Women's Panties,Underwear,450,L,Dozen,K551
 4125,1327,31,195,1.0,3XL-PCL24S,Drawers,Women's Panties,Underwear,1217,3XL,Dozen,PCL24S
-4126,1839,31,196,,XL-K551,Briefs,Women's Panties,Underwear,516,XL,Dozen,K551
+4126,1839,31,196,0.0,XL-K551,Briefs,Women's Panties,Underwear,516,XL,Dozen,K551
 4127,2354,31,197,20.0,9-S1D204,Regular-Over the Calf,Children's Socks,Socks,525,9,Dozen,S1D204
 4128,3379,31,198,30.0,S-ISAL46S,Briefs,Women's Panties,Underwear,205,S,Dozen,ISAL46S
 4129,4409,31,199,100.0,M-BX46CF,Boxers,Men's Briefs,Underwear,75,M,Single Unit,BX46CF
@@ -4137,27 +4137,27 @@
 4135,4415,39,55,10.0,M-B46SDCB,Briefs,Women's Panties,Underwear,295,M,Dozen,B46SDCB
 4136,1351,39,56,1.0,M-TA7703,Thongs,Women's Panties,Underwear,192,M,Dozen,TA7703
 4137,1352,39,57,1.0,M-TA7706,Thongs,Women's Panties,Underwear,192,M,Dozen,TA7706
-4138,1355,39,58,,XXL-K461001,Briefs,Women's Panties,Underwear,581,XXL,Dozen,K461001
+4138,1355,39,58,0.0,XXL-K461001,Briefs,Women's Panties,Underwear,581,XXL,Dozen,K461001
 4139,3931,39,59,10.0,L-TB4642SV,Thongs,Women's Panties,Underwear,205,L,Dozen,TB4642SV
-4140,2413,39,60,,M-B4614SK,Briefs,Women's Panties,Underwear,333,M,Dozen,B4614SK
-4141,2417,39,61,,M-B46DB,Briefs,Women's Panties,Underwear,204,M,Dozen,B46DB
+4140,2413,39,60,0.0,M-B4614SK,Briefs,Women's Panties,Underwear,333,M,Dozen,B4614SK
+4141,2417,39,61,0.0,M-B46DB,Briefs,Women's Panties,Underwear,204,M,Dozen,B46DB
 4142,3954,39,62,10.0,SM-BAD90,Undershirts,Women's Undershirts,Underwear,350,S-M,Dozen,BAD90
-4143,2421,39,63,,M-B46SDB,Briefs,Women's Panties,Underwear,286,M,Dozen,B46SDB
+4143,2421,39,63,0.0,M-B46SDB,Briefs,Women's Panties,Underwear,286,M,Dozen,B46SDB
 4144,379,39,64,1.0,M-BX17C2,Boxers,Men's Briefs,Underwear,63,M,Single Unit,BX17C2
 4145,380,39,65,1.0,M-BX17S2,Boxers,Men's Briefs,Underwear,61,M,Single Unit,BX17S2
-4146,2429,39,66,,3XL-K4681,Briefs,Women's Panties,Underwear,672,3XL,Dozen,K4681
-4147,1920,39,67,,XL-A4673,Briefs,Women's Panties,Underwear,389,XL,Dozen,A4673
-4148,899,39,68,,XXL-BX33,Boxers,Men's Briefs,Underwear,96,XXL,Single Unit,BX33
-4149,900,39,69,,XXL-BX64P,Boxers,Men's Briefs,Underwear,108,XXL,Single Unit,BX64P
+4146,2429,39,66,0.0,3XL-K4681,Briefs,Women's Panties,Underwear,672,3XL,Dozen,K4681
+4147,1920,39,67,0.0,XL-A4673,Briefs,Women's Panties,Underwear,389,XL,Dozen,A4673
+4148,899,39,68,0.0,XXL-BX33,Boxers,Men's Briefs,Underwear,96,XXL,Single Unit,BX33
+4149,900,39,69,0.0,XXL-BX64P,Boxers,Men's Briefs,Underwear,108,XXL,Single Unit,BX64P
 4150,2449,39,70,20.0,L-G46T,Briefs,Women's Panties,Underwear,388,L,Dozen,G46T
 4151,2450,44,108,20.0,XL-G46T,Briefs,Women's Panties,Underwear,445,XL,Dozen,G46T
-4152,2453,44,109,,S-T46D,Briefs,Women's Panties,Underwear,265,S,Dozen,T46D
-4153,2456,44,110,,XL-T46D,Briefs,Women's Panties,Underwear,216,XL,Dozen,T46D
-4154,409,44,111,,M-C31E,Briefs,Women's Panties,Underwear,335,M,Dozen,C31E
+4152,2453,44,109,0.0,S-T46D,Briefs,Women's Panties,Underwear,265,S,Dozen,T46D
+4153,2456,44,110,0.0,XL-T46D,Briefs,Women's Panties,Underwear,216,XL,Dozen,T46D
+4154,409,44,111,0.0,M-C31E,Briefs,Women's Panties,Underwear,335,M,Dozen,C31E
 4155,4011,44,112,100.0,S-BX34E,Boxers,Men's Briefs,Underwear,70,S,Single Unit,BX34E
 4156,4012,44,113,100.0,M-BX34E,Boxers,Men's Briefs,Underwear,75,M,Single Unit,BX34E
 4157,4013,44,114,100.0,L-BX34E,Boxers,Men's Briefs,Underwear,85,L,Single Unit,BX34E
-4158,2478,44,115,,S-LL46D,Briefs,Women's Panties,Underwear,231,S,Dozen,LL46D
+4158,2478,44,115,0.0,S-LL46D,Briefs,Women's Panties,Underwear,231,S,Dozen,LL46D
 4159,4016,44,116,100.0,S-BX46E,Boxers,Men's Briefs,Underwear,60,S,Single Unit,BX46E
 4160,4017,45,38,100.0,S-BX46SE,Boxers,Men's Briefs,Underwear,60,S,Single Unit,BX46SE
 4161,3004,45,39,20.0,S-BX93A,Boxers,Men's Briefs,Underwear,70,S,Single Unit,BX93A
