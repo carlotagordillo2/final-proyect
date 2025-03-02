@@ -183,6 +183,7 @@ df_products = pd.read_csv('../Datasets/clean_products.csv', index_col = 0)
 df_orders = pd.read_csv('../Datasets/clean_orders.csv', index_col = 0)
 df_order_details = pd.read_csv('../Datasets/clean_order_details.csv', index_col=0)
 df_customer = pd.read_csv('../Datasets/clean_customer.csv', index_col=0)
+df_products_security_stock = pd.read_csv('../Datasets/product_security_stock.csv', index_col=0)
 
 df_1 = df_order_details.merge(df_products, on = 'ProductID')
 
@@ -213,7 +214,7 @@ rules = association_rules(frequent_items, metric="lift", min_threshold=1.0)
 # **Interfaz Streamlit**
 st.title("Sales Portal")
 
-opcion = st.sidebar.radio("Choose an option", ("Home", "Pick-up products", "Product Location Finder", "Product Recommendations"))
+opcion = st.sidebar.radio("Choose an option", ("Home", "Pick-up products", "Product Location Finder", "Product Recommendations", "Product Replenishment Check"))
 
 if opcion == "Home":
     st.header("Bienvenido a la página de inicio")
@@ -362,3 +363,65 @@ elif opcion == 'Product Recommendations':
                     st.dataframe(recomendaciones[['ProductName', 'Category', 'ProductLine', 'Gender', 'Size', 'Weight', 'PackSize', 'PurchasePrice']])
                 else:
                     st.write("❌ It doesn't find any recommendation for this combination.")
+
+elif opcion == "Product Replenishment Check":
+    
+    st.subheader("Product Replenishment Check")
+    
+    #select categories 
+    categorias = df_products_security_stock['Category'].unique()
+    categoria_seleccionadas = st.selectbox("Select category:", categorias)
+    
+    #select products based on category 
+    
+    products_filters = df_products_security_stock[df_products_security_stock['Category']==categoria_seleccionadas]
+    product_selected = st.multiselect("Select products:", products_filters['ProductName'].unique())
+    
+    # enter the quantity 
+    cantidad_seleccionada = {}
+    
+    if product_selected:
+        for prod in product_selected:
+            cantidad = st.number_input(f"Enter quantity needed for {prod}:", min_value=1, step=1, key=prod)
+            cantidad_seleccionada[prod] = cantidad
+    
+        if st.button("Check Replenishment Need:"):
+            if product_selected:
+                for prod in product_selected:
+                    
+                    product_info = df_products_security_stock[df_products_security_stock['ProductName'] == prod].iloc[0]
+                    
+                    # data
+                    
+                    stock_disponible = product_info['Stock']
+                    rop = product_info['ROP']
+                    security_stock = product_info['SecurityStock']
+                    lead_time = (float(product_info['LeadTime(avg)']), float(product_info['LeadTime(std)']))
+                    
+                    # Mostrar los valores del producto
+                    st.write(f"🔹 **Product:** {prod}")
+                    st.write(f"🔹 **Available stock:** {stock_disponible}")
+                    st.write(f"🔹 **ROP (Reorder Point):** {rop}")
+                    st.write(f"🔹 **Security Stock (Min. Required):** {security_stock}")
+                    st.write(f"🔹 **Lead Time (average, std):** {lead_time}")
+                    
+                    cantidad_requerida = cantidad_seleccionada[prod]  # Cantidad ingresada por el usuario
+                    st.write(f"🔹 **Quantity requested:** {cantidad_requerida}")
+                    
+                    # Actualizar el stock disponible restando la cantidad solicitada
+                    stock_disponible -= cantidad_requerida
+                    st.write(f"🔹 **Updated available stock (after customer request):** {stock_disponible}")
+            
+                    
+                    # Verificar si se necesita hacer un pedido
+                    if stock_disponible < security_stock:
+                        cantidad_a_pedir = max(0, security_stock - stock_disponible)  # Para asegurar el mínimo de stock
+                        st.write(f"⚠️ You need to reorder {cantidad_a_pedir} units to reach the Security Stock!")
+                    elif stock_disponible < rop:
+                        cantidad_a_pedir = max(0, rop - stock_disponible)  # Para alcanzar el ROP
+                        st.write(f"⚠️ You need to reorder {cantidad_a_pedir} units to reach the ROP!")
+                    else:
+                        st.write("✅ No need to reorder, sufficient stock available.")
+        else:
+            st.warning("Please select at least one product.")
+        
