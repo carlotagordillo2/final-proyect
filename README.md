@@ -1,5 +1,7 @@
 # Final Proyect - Retail
 
+![Logo](Visualization/logo_grande.PNG)
+
 ## Objetive 
 
 The objective is to predict the demand for products in a shop to optimise inventory levels and reduce losses due to overstocking or out-of-stocks. In addition, to link the demand for these products with the optimisation of the distribution of these products in the warehouse to optimise the preparation/stocking time and maximise sales. 
@@ -7,11 +9,11 @@ The objective is to predict the demand for products in a shop to optimise invent
 **Use Cases**
 - Improve stock management.
 - Reduce losses due to unsold products
-- Predict demand in high sales seasons (Christmas, Sales, Holidays) 
+
 
 ## Data Sources
 
-[Kaggle dataset] (https://www.kaggle.com/datasets/hserdaraltan/underwear-data-with-11-tables-and-up-to-100k-rows?select=products.csv)
+![Kaggle dataset](https://www.kaggle.com/datasets/hserdaraltan/underwear-data-with-11-tables-and-up-to-100k-rows?select=products.csv)
 
 ![Entity-relationship diagram](Datasets/diagrama_entidad_relacion.png)
 
@@ -203,10 +205,15 @@ Lead time is the time that elapses from the time an order is placed until the pr
 |  830  | *XL-K29* | Briefs | 0.32 | 1.70 | 55.47 | 51.50 | 26.905% | 
 
 
-### Distribution in the warehouse
+## Distribution in the warehouse
 
 
 ![Warehouse distribution](ML/warehouse_distribution.png)
+
+
+## Streamlit
+
+## PowerBI
 
 ## Process
 
