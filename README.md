@@ -284,6 +284,14 @@ Lead time is the time that elapses from the time an order is placed until the pr
 - *01/03/2025*  
 
     - distribucion del inventario
+    - problema de minimizacion
+    - implementacion de streamlit
+    - powerbi
+
+- *04/03/2025*
+
+    - terminar pestaña powerbi
+    - presentacion
 
 
 ### 4. Visualization
@@ -301,7 +309,7 @@ Lead time is the time that elapses from the time an order is placed until the pr
 | 11 - EDA   | 13 - EDA   | 15 - EDA    |
 | 18 - Forecast  | 20 - Forecast | 22 - Forecast |
 | 25 - Forecast  | 27 - Forecast  | 1 -  Distribution in the warehouse |
-| 4 -   | 6 - streamlit   | 8 - preparar presentacion  |
+| 4 - terminar powerbi + presentacion  | 6 - presentacion   | 8 - preparar presentacion  |
 | 11 - **Presentacion**  | 13 - **Presentacion**  | 15 - **Presentacion**  |
 
 ## Project Structure 📁
