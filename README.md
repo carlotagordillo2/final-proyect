@@ -127,19 +127,19 @@ Best model: **Prophet**
 ### Desagregate forecasting
 
 
-    - **Classification ABC**
+- **Classification ABC**
 
-        The ABC criterion is based on the contribution of each product to total revenues:
+    The ABC criterion is based on the contribution of each product to total revenues:
 
-        - Class A: Represent 60% of revenues.
-        - Class B: Represent 30% of revenues.
-        - Class C: Represent the remaining 10%.
+    - Class A: Represent 60% of revenues.
+    - Class B: Represent 30% of revenues.
+    - Class C: Represent the remaining 10%.
 
-    - **According to the demand**
+- **According to the demand**
 
-        Now that we have the ABC classification, we will categorise the products according to their demand: **high or low**. 
+    Now that we have the ABC classification, we will categorise the products according to their demand: **high or low**. 
 
-        Products with less than 10 units (*median*) of monthly demand or with more than 30% of months without sales will be classified as low demand.
+    Products with less than 10 units (*median*) of monthly demand or with more than 30% of months without sales will be classified as low demand.
 
 
 | Classification / Demand | A| B  | C | 
@@ -157,35 +157,35 @@ Within the products classified as Class A with high demand, 4 products have been
 
 Security stock is the additional amount of inventory held to cover uncertainty in demand or delivery times. It is calculated using the following formula:
 
-$ \text{Security Stock} = \( Z \times \sigma_{LT} \) $
+$\text{Security Stock} = \( Z \times \sigma_{LT} \)$
 
 where: 
 
-- $ \Z$ is the value corresponding to the 99% confidence level (approximately 2.33 in a normal distribution).
-- $ \sigma_{LT}$ is the standard deviation of the lead time, which takes into account the variability of both demand and lead time.
+- $\Z$ is the value corresponding to the 99% confidence level (approximately 2.33 in a normal distribution).
+- $\sigma_{LT}$ is the standard deviation of the lead time, which takes into account the variability of both demand and lead time.
 
-To calculate $ \sigma_{LT}$, we use the following formula:
+To calculate $\sigma_{LT}$, we use the following formula:
 
-$  \sigma_{LT} = \sqrt{\left( LT_{avg} \times \sigma_{demand}^2 \right) + \left( \mu_{demand}^2 \times LT_{std}^2 \right)} $
+$ \sigma_{LT} = \sqrt{\left(LT_{avg} \times \sigma_{demand}^2 \right) + \left( \mu_{demand}^2 \times LT_{std}^2 \right)}$
 
 where:
 
-- $ \LT_{avg} $ is the average lead time.
-- $ \sigma_{demand}$ is the standard deviation of demand. 
-- $ \mu_{demand}$ is the average demand.
-- $ \LT_{std} $ is the standard deviation of demand.
+- $LT_{avg}$ is the average lead time.
+- $\sigma_{demand}$ is the standard deviation of demand. 
+- $\mu_{demand}$ is the average demand.
+- $LT_{std}$ is the standard deviation of demand.
 
 
 2. **Reorder Point (ROP)**
 
 The Reorder Point (ROP) is the level of inventory at which an order must be placed to avoid running out of stock. It is calculated using the formula:
 
-$ \text{ROP}: \mu_{demand} \times LT_{avg} + \text{Security Stock}$
+$\text{ROP}: \mu_{demand} \times LT_{avg} + \text{Security Stock}$
 
 where:
 
 - $\mu_{demand}$ is the average demand during the lead time.
-- $\LT_{avg}$ is the average lead time.
+- $LT_{avg}$ is the average lead time.
 - **Security Stock** is the adicional inventory calculated previously.
 
 3. **Lead Time**
