@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
-from pulp import LpProblem, LpVariable, LpMinimize, lpSum, LpStatus
+from pulp import LpProblem, LpVariable, LpMinimize, lpSum, LpStatus, value
 from sklearn.metrics.pairwise import cosine_similarity
+from mlxtend.frequent_patterns import apriori, association_rules
 
 def recomendar_productos_cliente(client_id, customer_product_matrix, customer_sim_df, top_n=5, top_n_clientes=5):
     # Verificar si el cliente está en el DataFrame de similitudes
@@ -19,6 +20,33 @@ def recomendar_productos_cliente(client_id, customer_product_matrix, customer_si
         productos_recomendados.update(productos_comprados)
         
     return list(productos_recomendados)[:top_n], list(clientes_similares)
+
+def recomendar_productos(cliente_id, productos_seleccionados):
+    recomendaciones = set()
+
+    # 1️⃣ Recomendaciones basadas en el historial de compras del cliente
+    if cliente_id in customer_product_matrix.index:
+        productos_cliente = customer_product_matrix.loc[cliente_id]
+        productos_frecuentes = productos_cliente[productos_cliente > 0].index
+        recomendaciones.update(productos_frecuentes)
+
+    # 2️⃣ Recomendaciones basadas en productos similares
+    for producto in productos_seleccionados:
+        if producto in product_sim_df.index:
+            similares = product_sim_df.loc[producto].sort_values(ascending=False).index[1:3]
+            recomendaciones.update(similares)
+
+    # 3️⃣ Recomendaciones basadas en reglas de asociación (productos comprados juntos)
+    for producto in productos_seleccionados:
+        reglas_filtradas = rules[rules['antecedents'].apply(lambda x: producto in list(x))]
+        consequents_validos = reglas_filtradas['consequents'].explode().dropna().values
+        recomendaciones.update(consequents_validos)
+
+    # Filtrar los productos recomendados en el DataFrame original
+    productos_recomendados = df_products[df_products['ProductName'].isin(recomendaciones - set(productos_seleccionados))]
+
+    return productos_recomendados
+
 
 def recomendar_productos_similares(productos_seleccionados, df_products, top_n=5):
     recomendaciones = set()
@@ -109,25 +137,32 @@ def pickup_products(productos_a_recoger, df_slots):
 
     # Resolver
     prob.solve()
+    
+    if LpStatus[prob.status] == "Optimal":
+        print(f"Distancia mínima total: {value(prob.objective)}")
+        total_recorrido = value(prob.objective)
 
-    # Construcción del recorrido
-    recorrido = []
-    visitados = set()
-    actual = "Origen"
+        # Construcción del recorrido
+        recorrido = []
+        visitados = set()
+        actual = "Origen"
 
-    while len(visitados) < len(productos) - 1:  # Origen no cuenta como producto
-        for j in productos:
-            if actual != j and x[actual][j].varValue == 1 and j not in visitados:
-                recorrido.append((actual, j))
-                visitados.add(actual)
-                actual = j
-                break
+        while len(visitados) < len(productos) - 1:  # Origen no cuenta como producto
+            for j in productos:
+                if actual != j and x[actual][j].varValue == 1 and j not in visitados:
+                    recorrido.append((actual, j))
+                    visitados.add(actual)
+                    actual = j
+                    break
 
-    # Asegurar que solo el último paso lleva al origen
-    if recorrido and recorrido[-1][1] != "Origen":
-        recorrido.append((recorrido[-1][1], "Origen"))
+        # Asegurar que solo el último paso lleva al origen
+        if recorrido and recorrido[-1][1] != "Origen":
+            recorrido.append((recorrido[-1][1], "Origen"))
+    else:
+        print("No se puedo encontrar la ruta optima")
+        total_recorrido = 0
 
-    return df_slots, productos_ajustados, recorrido, productos_seleccionados
+    return df_slots, productos_ajustados, recorrido, productos_seleccionados, total_recorrido
 
 # Función para mostrar el recorrido
 def mostrar_recorrido(recorrido, productos_seleccionados):
@@ -149,6 +184,8 @@ df_orders = pd.read_csv('../Datasets/clean_orders.csv', index_col = 0)
 df_order_details = pd.read_csv('../Datasets/clean_order_details.csv', index_col=0)
 df_customer = pd.read_csv('../Datasets/clean_customer.csv', index_col=0)
 
+df_1 = df_order_details.merge(df_products, on = 'ProductID')
+
 #crear la matriz customer-product
 
 customer_product_matrix = df_order_details.pivot_table(index='OrderID', columns='ProductID', values='QuantitySold', aggfunc='sum').fillna(0)
@@ -158,10 +195,25 @@ customer_product_matrix = df_order_details.pivot_table(index='OrderID', columns=
 customer_sim_df = cosine_similarity(customer_product_matrix)
 customer_sim_df = pd.DataFrame(customer_sim_df, index=customer_product_matrix.index, columns=customer_product_matrix.index)
 
-# **Interfaz Streamlit**
-st.title("Portal Ventas")
+product_features = df_products[['Category', 'ProductLine', 'Size', 'Weight', 'PurchasePrice', 'Gender', 'PackSize']].fillna(0)
 
-opcion = st.sidebar.radio("Elige una opción", ("Home", "Pick-up products", "Orders", "Product Recommendations"))
+product_similarity = cosine_similarity(pd.get_dummies(product_features))
+product_sim_df = pd.DataFrame(product_similarity, index=df_products['ProductName'], columns=df_products['ProductName'])
+
+basket = df_1.pivot_table(index="OrderID", columns="ProductName", values="QuantitySold", aggfunc="sum").fillna(0)
+basket = (basket > 0).astype(int)
+
+frequent_items = apriori(basket, min_support=0.05, use_colnames=True)
+
+rules = association_rules(frequent_items, metric="lift", min_threshold=1.0)
+
+
+
+
+# **Interfaz Streamlit**
+st.title("Sales Portal")
+
+opcion = st.sidebar.radio("Choose an option", ("Home", "Pick-up products", "Product Location Finder", "Product Recommendations"))
 
 if opcion == "Home":
     st.header("Bienvenido a la página de inicio")
@@ -195,48 +247,118 @@ elif opcion == "Pick-up products":
 
         if st.button('Calculate the optimal route'):
             if productos_a_recoger:
-                df, productos_ajustados, recorrido, productos_seleccionados = pickup_products(productos_a_recoger, df)
+                df, productos_ajustados, recorrido, productos_seleccionados, total_recorrido = pickup_products(productos_a_recoger, df)
                 
                 st.write("Selected Products:")
                 st.dataframe(productos_ajustados[['ProductName', 'CantidadRecoger', 'Stock']])
 
                 mostrar_recorrido(recorrido, productos_seleccionados)
+                st.write(f'Minimum distance: {total_recorrido}')
             else:
                 st.write("Please select at least one product.")
 
-elif opcion == "Orders":
-    st.subheader("Contenido de órdenes")
-    st.write("¡Hola!")
+elif opcion == "Product Location Finder":
+    st.subheader("Product Location Finder")
+    st.write("Select your products and receive their location!")
+    
+    # selecciona la categoria
+    categorias = df['Category'].unique()
+    categorias_seleccionadas = st.multiselect("Select your product categories", categorias)
+    
+    if not categorias_seleccionadas:
+        st.warning("Select at least one category")
+    # selecciona la linea de producto
+    
+    lineas = df[df['Category'].isin(categorias_seleccionadas)]['ProductLine'].unique()
+    lineas_seleccionadas = st.multiselect("Select Product Line", lineas)
+    
+    if not lineas_seleccionadas:
+        st.warning("Select at least one product line")
+        
+    # select products
+    
+    productos_filtrados = df[(df['Category'].isin(categorias_seleccionadas)) & (df['ProductLine'].isin(lineas_seleccionadas))]
+    productos_seleccionados = st.multiselect("Select product(s)", productos_filtrados['ProductName'].unique())
+    
+    if not productos_seleccionados:
+        st.warning("Select at least one product")
+        
+    if st.button("Show product locations"):
+        
+        if productos_seleccionados:
+            ubicaciones = df[df['ProductName'].isin(productos_seleccionados)][['ProductName', 'X', 'Y']]
+            ubicaciones = ubicaciones.rename(columns={'X': 'Row', 'Y': 'Column'})
+            st.write("Product locations:")
+            st.dataframe(ubicaciones)
+        
+        else: 
+            st.warning("Please select at least one product.")
 
 elif opcion == 'Product Recommendations':
     st.subheader("Product Recommendations for You")
 
     # Opción de recomendación por clientes o por productos
-    recomendacion_tipo = st.radio("Choose recommendation type", ("Based on Customers", "Based on Products"))
+    ##recomendacion_tipo = st.radio("Choose recommendation type", ("Based on Customers", "Based on Products", "Based on Customer's basket"))
 
-    if recomendacion_tipo == "Based on Customers":
+    recomendacion_tipo = st.radio("Choose recommendation type", ("Based on Products", "Based on Customer's basket"))
+    
+    
+    #if recomendacion_tipo == "Based on Customers":
         # Crear un desplegable para seleccionar un cliente
-        cliente_ids = df_customer['CustomerID'].unique()
-        cliente_id = st.selectbox("Selecciona tu ID de cliente", cliente_ids)
+    #   cliente_ids = df_customer['CustomerID'].unique()
+    #    cliente_id = st.selectbox("Selecciona tu ID de cliente", cliente_ids)
 
-        if cliente_id:
+     #   if cliente_id:
             # Obtener las recomendaciones basadas en el cliente seleccionado
-            recomendaciones_cliente, clientes_similares = recomendar_productos_cliente(cliente_id, customer_product_matrix, customer_sim_df, top_n=5)
+    #        recomendaciones_cliente, clientes_similares = recomendar_productos_cliente(cliente_id, customer_product_matrix, customer_sim_df, top_n=5)
             
             # Mostrar las recomendaciones de productos para el cliente seleccionado
-            if recomendaciones_cliente:
-                st.write(f"Top 5 product recommendations for customer {cliente_id}:")
-                mostrar_tablas_recomendaciones(recomendaciones_cliente, df_products, clientes_similares, df_customer)
-            else:
-                st.write(f"No se encontraron recomendaciones para el cliente {cliente_id}.")
-        else:
-            st.write("Please select a valid customer ID.")
+    #        if recomendaciones_cliente:
+    #            st.write(f"Top 5 product recommendations for customer {cliente_id}:")
+    #           mostrar_tablas_recomendaciones(recomendaciones_cliente, df_products, clientes_similares, df_customer)
+    #        else:
+    #            st.write(f"No se encontraron recomendaciones para el cliente {cliente_id}.")
+    #    else:
+     #       st.write("Please select a valid customer ID.")*/
 
-    elif recomendacion_tipo == "Based on Products":
+    if recomendacion_tipo == "Based on Products":
         productos_seleccionados = st.multiselect('Select the products you are interested in:', df_products['ProductName'].unique(), default=[])
         if productos_seleccionados:
             recomendaciones_productos = recomendar_productos_similares(productos_seleccionados, df_products, top_n=5)
-            st.write(f"Top 5 product recommendations based on selected products:")
+            #st.write(f"Top 5 product recommendations based on selected products:")
             mostrar_tablas_recomendaciones(recomendaciones_productos, df_products, [], df_customer)
         else:
             st.write("Please select at least one product.")
+            
+    elif recomendacion_tipo == "Based on Customer's basket":
+        
+        st.subheader("Personalized recommendations:")
+        
+        cliente_id = st.selectbox("Select a client:", df_customer["CustomerID"].unique())
+        categorias = df_products['Category'].unique()
+        categorias_seleccionadas = st.multiselect("Select categories", categorias)
+
+        if  not categorias_seleccionadas:
+            
+            st.warning("Please select at least one category.")
+            
+        else:
+            
+            productos_filtrados = df_products[df_products['Category'].isin(categorias_seleccionadas)]
+            st.write("Products available in selected categories:")
+            st.write(productos_filtrados[['ProductName', 'Category', 'ProductLine', 'Gender', 'Weight', 'Size', 'PackSize']])
+
+            productos_seleccionados = st.multiselect("Select products:", productos_filtrados["ProductName"].unique())
+            
+
+        if st.button("Obtein recommendations"):
+                
+            if not productos_seleccionados:
+                st.warning("Please select at least one product.")
+            else:
+                recomendaciones = recomendar_productos(cliente_id, productos_seleccionados)
+                if not recomendaciones.empty:
+                    st.write("✅ Recommended products:")
+                    st.dataframe(recomendaciones[['ProductName', 'Category', 'ProductLine', 'Gender', 'Size', 'Weight', 'PackSize', 'PurchasePrice']])
+                else:
+                    st.write("❌ It doesn't find any recommendation for this combination.")

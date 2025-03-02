@@ -147,7 +147,66 @@ Best model: **Prophet**
 |  High Demand | 438  | 928 | 827 | 
 |Low Demand  | 11 | 497 | 1340|
 
+#### Selection of **Class A products with High Demand**
 
+Within the products classified as Class A with high demand, 4 products have been selected to calculate all metrics related to inventory management and forecast stock-outs. These metrics are calculated under a 99% confidence level, which means that we want to be 99% sure that the inventory level will be sufficient to meet the demand.
+
+##### **Calculated metrics**
+
+1. **Security Stock**
+
+Security stock is the additional amount of inventory held to cover uncertainty in demand or delivery times. It is calculated using the following formula:
+
+$ \text{Security Stock} = \( Z \times \sigma_{LT} \) $
+
+where: 
+
+- $ \Z$ is the value corresponding to the 99% confidence level (approximately 2.33 in a normal distribution).
+- $ \sigma_{LT}$ is the standard deviation of the lead time, which takes into account the variability of both demand and lead time.
+
+To calculate $ \sigma_{LT}$, we use the following formula:
+
+$  \sigma_{LT} = \sqrt{\left( LT_{avg} \times \sigma_{demand}^2 \right) + \left( \mu_{demand}^2 \times LT_{std}^2 \right)} $
+
+where:
+
+- $ \LT_{avg} $ is the average lead time.
+- $ \sigma_{demand}$ is the standard deviation of demand. 
+- $ \mu_{demand}$ is the average demand.
+- $ \LT_{std} $ is the standard deviation of demand.
+
+
+2. **Reorder Point (ROP)**
+
+The Reorder Point (ROP) is the level of inventory at which an order must be placed to avoid running out of stock. It is calculated using the formula:
+
+$ \text{ROP}: \mu_{demand} \times LT_{avg} + \text{Security Stock}$
+
+where:
+
+- $\mu_{demand}$ is the average demand during the lead time.
+- $\LT_{avg}$ is the average lead time.
+- **Security Stock** is the adicional inventory calculated previously.
+
+3. **Lead Time**
+
+Lead time is the time that elapses from the time an order is placed until the product arrives in inventory. This parameter is essential as it directly influences the calculation of ROP and security stock.
+
+
+#### Products
+
+| ProductID | Product Name | Category  | Lead time (avg) | Lead time (std) | ROP | Security Stock | Percentage profit |
+|-----------|-----------|-----------|-----------|
+|  427 | *M-ERK61* | Briefs | 1.65 | 7.41 | 327.02 | 298.72 | 21.62% |
+|  861  | *XL-K4673* | Briefs | 0.23 | 1.45 | 39.14 | 36.71 | 27.95% |
+|  865  | *XL-K465* | Briefs | 0.29 | 1.69 | 61.05 | 56.88 | 24.69% |
+|  830  | *XL-K29* | Briefs | 0.32 | 1.70 | 55.47 | 51.50 | 26.905% | 
+
+
+### Distribution in the warehouse
+
+
+![Warehouse distribution](ML/warehouse_distribution.png)
 
 ## Process
 
