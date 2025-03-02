@@ -161,12 +161,12 @@ $\text{Security Stock} = \( Z \times \sigma_{LT} \)$
 
 where: 
 
-- $\Z$ is the value corresponding to the 99% confidence level (approximately 2.33 in a normal distribution).
+- $Z$ is the value corresponding to the 99% confidence level (approximately 2.33 in a normal distribution).
 - $\sigma_{LT}$ is the standard deviation of the lead time, which takes into account the variability of both demand and lead time.
 
 To calculate $\sigma_{LT}$, we use the following formula:
 
-$ \sigma_{LT} = \sqrt{\left(LT_{avg} \times \sigma_{demand}^2 \right) + \left( \mu_{demand}^2 \times LT_{std}^2 \right)}$
+$\sigma_{LT} = \sqrt{\left(LT_{avg} \times \sigma_{demand}^2 \right) + \left( \mu_{demand}^2 \times LT_{std}^2 \right)}$
 
 where:
 
@@ -196,7 +196,7 @@ Lead time is the time that elapses from the time an order is placed until the pr
 #### Products
 
 | ProductID | Product Name | Category  | Lead time (avg) | Lead time (std) | ROP | Security Stock | Percentage profit |
-|-----------|-----------|-----------|-----------|
+|-----------|-----------|-----------|-----------|-------------|---------|-------------|--------------|
 |  427 | *M-ERK61* | Briefs | 1.65 | 7.41 | 327.02 | 298.72 | 21.62% |
 |  861  | *XL-K4673* | Briefs | 0.23 | 1.45 | 39.14 | 36.71 | 27.95% |
 |  865  | *XL-K465* | Briefs | 0.29 | 1.69 | 61.05 | 56.88 | 24.69% |
