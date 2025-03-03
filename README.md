@@ -215,7 +215,7 @@ Lead time is the time that elapses from the time an order is placed until the pr
 
 ## PowerBI
 
-![Panel](Visualization/Panel-UnderFit.gif)
+![Panel](Visualization/Panel.gif)
 
 ## Process
 
