@@ -115,19 +115,39 @@ def piechart(df, name, threshold):
 
     frequency_table_grouped = frequency_table_grouped[frequency_table_grouped > 0]
 
-    plt.figure(figsize=(10, 10))
-    colors = sns.color_palette("Set3", len(frequency_table_grouped))
+    plt.figure(figsize=(10, 8))
+    #colors = sns.color_palette("Set3", len(frequency_table_grouped))
+    #colors = sns.color_palette("Blues", len(frequency_table_grouped))
+    #colors = sns.color_palette("coolwarm", len(frequency_table_grouped))
+    colors = sns.color_palette("crest", len(frequency_table_grouped))
+    #colors = sns.color_palette("deep", len(frequency_table_grouped))
 
-    plt.pie(
+    
+
+
+    
+
+    wedges, texts, autotexts = plt.pie(
         frequency_table_grouped, 
         labels=frequency_table_grouped.index, 
         autopct='%1.1f%%', 
         startangle=90, 
-        colors=colors
+        colors=colors,
+        textprops={'fontsize': 10},  
+        pctdistance=0.85,  
+        labeldistance=1.2
     )
-    plt.xticks(rotation=45)
+    
+    for text in texts:
+        text.set_rotation_mode("anchor")  
+        text.set_rotation(45)  
+
+    plt.setp(autotexts, size=10, weight="bold")  # Ajusta tamaño de porcentaje
+
+    #plt.xticks(rotation=90)
 
     plt.title(f'{name}')
+    plt.tight_layout()
     plt.show()
     
     

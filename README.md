@@ -149,6 +149,35 @@ Best model: **Prophet**
 |  High Demand | 438  | 928 | 827 | 
 |Low Demand  | 11 | 497 | 1340|
 
+Following 20-80 rules, we predict 20 products of each classification:
+
+For High Demand, I used the same method than aggregate forecast but for low demand Moving Average. 
+
+- Class A, High Demand
+
+![Class A High](ML/stock_A.png)
+
+- Class B, High Demand
+
+![Class B High](ML/stock_B_h.png)
+
+- Class C, High Demand
+
+![Class C High](ML/stock_C_h.png)
+
+- Class A, Low Demand
+
+![Class A Low](ML/class_A_l.png)
+
+- Class B, Low Demand
+
+![Class B Low](ML/stock_B_l.png)
+
+- Class C, Low Demand
+
+![Class C Low](ML/stock_C_l.png)
+
+![]
 #### Selection of **Class A products with High Demand**
 
 Within the products classified as Class A with high demand, 4 products have been selected to calculate all metrics related to inventory management and forecast stock-outs. These metrics are calculated under a 99% confidence level, which means that we want to be 99% sure that the inventory level will be sufficient to meet the demand.
@@ -207,6 +236,7 @@ Lead time is the time that elapses from the time an order is placed until the pr
 
 ## Distribution in the warehouse
 
+In order to distribute products in the eficient
 
 ![Warehouse distribution](ML/warehouse_distribution.png)
 
@@ -214,6 +244,10 @@ Lead time is the time that elapses from the time an order is placed until the pr
 ## Streamlit
 
 ## PowerBI
+
+![Elbow Method](ML/elbow_method.png)
+
+![Category Cluster](ML/category%20cluster.png)
 
 ![Panel](Visualization/Panel.gif)
 
