@@ -4,6 +4,18 @@ from pulp import LpProblem, LpVariable, LpMinimize, lpSum, LpStatus, value
 from sklearn.metrics.pairwise import cosine_similarity
 from mlxtend.frequent_patterns import apriori, association_rules
 
+st.markdown(
+    """
+    <style>
+        
+        .st-at { color: #007bff !important; }
+        .st-dx { background-color: #007bff !important; }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
 def recomendar_productos_cliente(client_id, customer_product_matrix, customer_sim_df, top_n=5, top_n_clientes=5):
     # Verificar si el cliente está en el DataFrame de similitudes
     if client_id not in customer_sim_df.columns:

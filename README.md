@@ -1,97 +1,123 @@
-# Final Proyect - Retail
+# UnderFit 
 
-![Logo](Visualization/logo_grande.PNG)
+![Logo](images/logo_grande.PNG)
+
+Final Proyect about retail at Ironhack. 
 
 ## Objetive 
 
 The objective is to predict the demand for products in a shop to optimise inventory levels and reduce losses due to overstocking or out-of-stocks. In addition, to link the demand for these products with the optimisation of the distribution of these products in the warehouse to optimise the preparation/stocking time and maximise sales. 
 
 **Use Cases**
+
 - Improve stock management.
-- Reduce losses due to unsold products
+- Reduce losses due to unsold products.
+- Enhance warehouse efficiency.
+- Increase the average customer ticket. 
+- Building customer loyalty. 
+
 
 
 ## Data Sources
 
 ![Kaggle dataset](https://www.kaggle.com/datasets/hserdaraltan/underwear-data-with-11-tables-and-up-to-100k-rows?select=products.csv)
 
-![Entity-relationship diagram](Datasets/diagrama_entidad_relacion.png)
+Entity-relationship diagram:
+
+![Entity-relationship diagram](images/diagrama_entidad_relacion.png)
+
+In total, is composed of:
+
+- 225 customers
+- 4169 products
+- 2286 orders
+- 105757 sold products
+- €3950215 total sales
+- From 2003 to 2006 order dates
+
 
 ## Insights
 
-**Customer**
-- Los clientes proceden en su mayoría de Rusia, sobre todo de la región de Moscow (27.6%)
-- Los clientes se caracterizan por ser discontinuos o no, siendo continuos más del 80% --> por tanto, podemos decir que se trata de una empresa de la que "se suele fiar"
-- La captación de clientes se realiza sobre todo a través de anuncios o llamadas y visitas
-- Los clientes son sobre todo retail o mayoristas a pequeña escala
+**Customer Analysis**
 
-- ¿Cuánto gastan en promedio? --> Pendiente
-- Segmentar clientes para ofrecerles estrategias personalizadas --> Pendientes
-- Sacar un mapa de clientes con los productos más vendidos, cantidad, etc
+- Most customers are from Russia, with 27.6% located in Moscow.
+- Over 80% of customers are continuous buyers, indicating strong customer trust.
+- Customer acquisition is mainly through advertisements, calls, and visits.
+- Customers are primarily retailers or small-scale wholesalers.
+- The average number of orders by customer is 10. 
 
 
 **Delay Payments**
-- Los clientes tardan una media de 4 días en pagar.
-- No existe una correlación entre la cantidad de dinero vendida con los días de retraso en el pago
-- Se observa que en media los clientes que pagan por adelantado gastan más que los que pagan días tarde (sobre todo, cuando son mñas de 30 días)
-- En particular, las características de los clientes que pagan con retraso son: 
-    - Region: Moscú
+
+- Customers take an average of 4 days to pay.
+- No correlation between sales amount and payment delay.
+- Customers who pay in advance tend to spend more, especially when compared to those with delays over 30 days.
+- Characteristics of customers with delayed payments:
+    - Region: Moscow
     - Price Category: 1
-    - Customer Class: Large-Scale Wholesaler-1 
+    - Customer Class: Large-Scale Wholesaler-1
     - Lead Source: Referral by the Central Office
     - Discontinued: No
+- Sales peaks often coincide with increased payment delays.
 
-- La tendencia entre el incremento de retraso de pagos y el total de ventas es contraria a lo largo del tiempo, es decir, cuando hay un pico de ventas, suele haber un pico en el número de días de retraso
 
 **DeliveryTime**
 
-- En media es 0, podemos decir que es una empresa eficiente
-- No se pueden sacar conclusiones por el medio de transporte
+- The average delivery time is 0, indicating an efficient supply chain.
+- No significant patterns detected based on the mode of transport.
 
 
 **Sales**
 
-- Las ventas son mayores en Moscu,
-- Las ventas y la cnatidad de clientes está muy relacionada
-- La frecuencia de pedidos por clientes es 10
-- La fuente de clientes más rentable es *Advertisement in National Wholesale Magazine* por el número de pedidos y el capital generado
-- El coste de entrega con respecto a las ventas es menor del 0.05
-- Total de Ventas = 3953248.07
-- Los productos que más ingresos generan pertenecen a la categoría de *Briefs* y *Drawers*
-- Productos más vendidos son a su vez los mismos que los que más ingresos generan.
-- Las categorías que más margen de beneficio dejan son 
-    - *Cuff-Over the Calf* --> 43.57%, pero son los que menos se han vendido
-    - *Regular-Over the Calf* --> 43.07%, solo se han vendido un poco más de 3100
+- Highest sales occur in Moscow.
+- Strong correlation between total sales and the number of orders by customer.
+- Customers place an average of 10 orders.
+- The most profitable customer acquisition source is *Referal by Central Office*.
+- Delivery cost accounts for less than 5% of total sales.
+- **Total Sales**: €3,953,248.07
+- **Top Revenue-Generating Product Categories:**
+    - Briefs
+    - Drawers
+- **Top-Selling Products:**
+    - The most sold products are also the highest revenue generators.
+- **Highest Profit Margin Categories:**
+    -*Cuff-Over the Calf* (43.57%) -> Least sold (only in winter)
+    -*Regular-Over the Calf* (43.07%) -> but just have 3100 sales
+    -*Thongs* (35.29%) and *Undershirts* (35.21%) -> High Sales & profitability.
 
-Después, vemos también que: 
-    - *Briefs* --> 28.56%, a pesar de ser nuestra categoria más vendida y que más ingresos generan no es la que más beneficios ofrece
-    - Después podemos potenciar ventas de otros productos con mayor rentabilidad, puesto que se venden bastante como: *Thongs* (35.29%) y *Undershits* (35.21%)
+- **Products with Negative Margins (Should Be Discontinued)**:
 
-Productos que más margen de beneficios generan: 
-    -  3066	S-TIEE03S	Thongs	2.225000%
-    - 1984	M-EE1206	Briefs	2.190476%
+|Product Name | Category | Profit Margin (%)|
+|-------------|----------|------------------|
+|L-K40  |	Briefs  |	-0.100610 |
+|	L-BX64P	| Boxers |	-0.066667 |
 
-Mientras, que hay productos que generan pérdidas y deben de ser descatalogados como:
-    - 1188	L-K40	Briefs	-0.100610
-    - 1013	L-BX64P	Boxers	-0.066667
+- **Products with highest Profit Margin**
 
-- Análisis de ventas por tamaño: destacan las prendas grandes. En cabeza, están las tallas: *XL*, *L* y *M*.
+|Product Name | Category | Profit Margin (%)|
+|-------------|----------|------------------|
+| S-TIEE03S  |	Thongs  |	2.225000% |
+|	M-EE1206	| Briefs |	2.190476% |
+
+
+- **Size Analysis:**
+    - Best-selling sizes: *XL*, *L* and *M*.
+
 
 **Time trends**
 
-- El número de pedidos aumenta sobre todo en los meses de agosto - septiembre y febrero-marzo, como que se debe al incio de curso-trimestre junto con los picos de incio del frío (tener en cuenta que es en Rusia).
+- Sales peak in **August-Spetember** and **February-March**, likely due to back-to-school season and colder months in Russia.
 
-- Análisis de número de ventas por día de la semana y mes --> En general, los primeros días de la semana son los que más ventas se realizan (Lunes - Martes). En agosto se nota una tendencia alta de compras, mientras que en mayo y junio decrece considerablemente todos los días de la semana. 
+- **Day of the Week Analysis:**
+    - Highest sales occur on **Friday, Tuesday and Monday**.
+    - Sales drop significantly in **May and June** accross all weekedays.
+
+
 
 **Stock**
 
-- Stock en producción --> Pendiente
-- Tasas de productos faltantes --> Pendientes
+- Stockout rates: 0%
 
-**Customer Trends**
-
-- Genero y Línea de producto --> profundizar más que en lo anterior
-- Modelos populares --> Pendiente
 
 **Payment Methods**
 
@@ -102,8 +128,10 @@ Mientras, que hay productos que generan pérdidas y deben de ser descatalogados 
 
 ### Total sales forecasting
 
-Predict total sales group by week. 
-Process: 
+**Objective**: Predict weekly total sales. 
+
+**Process:**
+
     1. Group data by week.
     2. Substitute outliers by median.
     3. Check for normality and apply Box-Cox
@@ -111,10 +139,13 @@ Process:
     5. Series Stationarity test. 
     6. Autocorrelation plots for original and differential series
     7. Apply models:
-        7.1 Auto arima -> bad result
-        7.2 Sarimax
+        - Auto arima -> Poor performance
+        - SARIMAX
+        - Prophet -> Best model
+
     8. Residuals study
     
+**Model Comparison:**
 
 | Models | AIC | BIC | HQIC | Log Likelihood |
 |-----------|-----------|-----------|-----------|-----------|
@@ -122,9 +153,9 @@ Process:
 |  **ARIMA** | 631.015 | 646.823 | 637.418 | -309.507 |
 |  **Prophet** | 153.00211 | 164.909 |  |  |
 
-Best model: **Prophet**
+**Best model: Prophet**
 
-![Prophet predictions](ML/prophet_predictions.png)
+![Prophet predictions](images/prophet_predictions.png)
 
 ### Desagregate forecasting
 
@@ -151,31 +182,33 @@ Best model: **Prophet**
 
 Following 20-80 rules, we predict 20 products of each classification:
 
-For High Demand, I used the same method than aggregate forecast but for low demand Moving Average. 
+For forecasting:
+- **High demand products** -> Same method as total sales forescasting.
+- **Low demand products** -> Moving Average.
 
 - Class A, High Demand
 
-![Class A High](ML/stock_A.png)
+![Class A High](images/stock_A.png)
 
 - Class B, High Demand
 
-![Class B High](ML/stock_B_h.png)
+![Class B High](images/stock_B_h.png)
 
 - Class C, High Demand
 
-![Class C High](ML/stock_C_h.png)
+![Class C High](images/stock_C_h.png)
 
 - Class A, Low Demand
 
-![Class A Low](ML/class_A_l.png)
+![Class A Low](images/class_A_l.png)
 
 - Class B, Low Demand
 
-![Class B Low](ML/stock_B_l.png)
+![Class B Low](images/stock_B_l.png)
 
 - Class C, Low Demand
 
-![Class C Low](ML/stock_C_l.png)
+![Class C Low](images/stock_C_l.png)
 
 ![]
 #### Selection of **Class A products with High Demand**
@@ -236,20 +269,62 @@ Lead time is the time that elapses from the time an order is placed until the pr
 
 ## Distribution in the warehouse
 
-In order to distribute products in the eficient
+To efficiently organize product storage, clustering analysis was performed:
 
-![Warehouse distribution](ML/warehouse_distribution.png)
+- **Category-level clustering:** Identifies groups of similar product categories based on demand and sales behavior.
+
+- **Product-level clustering:** Within each category, products were further grouped based on purchase likelihood, ensuring that frequently bought-together items are stored close to each other (using *apriori*).
+
+![Elbow Method](images/elbow_method.png)
+
+Looking at the above graph of the elbow method, we determine that the optimal k is 4
+
+![Category Cluster](images/category%20cluster.png)
+
+**PCA Analysis Interpretation:**
+
+- **PCA1** → Represents fabric quantity (Negative: Less fabric, Positive: More fabric).
+
+- **PCA2** → Represents gender (Negative: Masculine, Positive: Feminine).
+
+By leveraging these insights, warehouse efficiency improves by minimizing retrieval times and optimizing inventory placement.
+
+
+![Warehouse distribution](images/warehouse_distribution.png)
+
+In conclusion, this organization minimizes the time needed for order picking and replenishment.
+
+### Minimzation Problem: Optimizing Product Retrieval
+
+To further improve efficiency, we formulated an optimization problem to minimize the total distance required to retrieve products from the warehouse. The objective is to determine the shortest possible route for picking the required products while maintaining stock levels.
+
+#### **Formulation**
+The minimization problem is structured as follows:
+
+**Decision Variables:**
+
+- $\x_{ij}$: Binary variable to indicating if the route goes from product $i$ to product $j$. 
+
+**Objetive Function:**
+
+$\min{\sum_{i\neq j}} d_{ij} x_{ij}$
+
+where: 
+- $d_{ij} $ is the Euclidean distance between products $i$ and $j$.
+
+**Constrains:**
+1. Each product must be visited exactly once: $\sum_{j} x_{ij}, \forall i$
+2. Each product must be left exactly once: $\sum_{i} x_{ij}, \forall j$
+3. No direct backtracking to the same location: $ x_{ij} + x_{ji} \leq 1, \forall i \neq j$
+
+Using this optimization model, the system calculates the most efficient retrieval route, reducing picking time and improving overall warehouse performance. The method ensures that products are retrieved in the most time-effective manner, leading to a smoother inventory flow.
 
 
 ## Streamlit
 
 ## PowerBI
 
-![Elbow Method](ML/elbow_method.png)
-
-![Category Cluster](ML/category%20cluster.png)
-
-![Panel](Visualization/Panel.gif)
+![Panel](images/Panel.gif)
 
 ## Process
 
