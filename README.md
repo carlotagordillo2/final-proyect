@@ -24,7 +24,7 @@ The objective is to predict the demand for products in a shop to optimise invent
 
 Entity-relationship diagram:
 
-![Entity-relationship diagram](images/diagrama_entidad_relacion.png)
+![Entity-relationship diagram](Datasets/diagrama_entidad_relacion.png)
 
 In total, is composed of:
 
@@ -132,18 +132,18 @@ In total, is composed of:
 
 **Process:**
 
-    1. Group data by week.
-    2. Substitute outliers by median.
-    3. Check for normality and apply Box-Cox
-    4. Time series descomposition.
-    5. Series Stationarity test. 
-    6. Autocorrelation plots for original and differential series
-    7. Apply models:
-        - Auto arima -> Poor performance
-        - SARIMAX
-        - Prophet -> Best model
+1. Group data by week.
+2. Substitute outliers by median.
+3. Check for normality and apply Box-Cox
+4. Time series descomposition.
+5. Series Stationarity test. 
+6. Autocorrelation plots for original and differential series
+7. Apply models:
+    - Auto arima -> Poor performance
+    - SARIMAX
+    - Prophet -> Best model
 
-    8. Residuals study
+8. Residuals study
     
 **Model Comparison:**
 
@@ -210,7 +210,7 @@ For forecasting:
 
 ![Class C Low](images/stock_C_l.png)
 
-![]
+
 #### Selection of **Class A products with High Demand**
 
 Within the products classified as Class A with high demand, 4 products have been selected to calculate all metrics related to inventory management and forecast stock-outs. These metrics are calculated under a 99% confidence level, which means that we want to be 99% sure that the inventory level will be sufficient to meet the demand.
@@ -294,7 +294,7 @@ By leveraging these insights, warehouse efficiency improves by minimizing retrie
 
 In conclusion, this organization minimizes the time needed for order picking and replenishment.
 
-### Minimzation Problem: Optimizing Product Retrieval
+### Minimization Problem: Optimizing Product Retrieval
 
 To further improve efficiency, we formulated an optimization problem to minimize the total distance required to retrieve products from the warehouse. The objective is to determine the shortest possible route for picking the required products while maintaining stock levels.
 
@@ -303,24 +303,62 @@ The minimization problem is structured as follows:
 
 **Decision Variables:**
 
-- $\x_{ij}$: Binary variable to indicating if the route goes from product $i$ to product $j$. 
+- $x_{ij}$: Binary variable to indicating if the route goes from product $i$ to product $j$. 
 
 **Objetive Function:**
 
 $\min{\sum_{i\neq j}} d_{ij} x_{ij}$
 
 where: 
-- $d_{ij} $ is the Euclidean distance between products $i$ and $j$.
+- $d_{ij}$ is the Euclidean distance between products $i$ and $j$.
 
 **Constrains:**
 1. Each product must be visited exactly once: $\sum_{j} x_{ij}, \forall i$
 2. Each product must be left exactly once: $\sum_{i} x_{ij}, \forall j$
-3. No direct backtracking to the same location: $ x_{ij} + x_{ji} \leq 1, \forall i \neq j$
+3. No direct backtracking to the same location: $x_{ij} + x_{ji} \leq 1, \forall i \neq j$
 
 Using this optimization model, the system calculates the most efficient retrieval route, reducing picking time and improving overall warehouse performance. The method ensures that products are retrieved in the most time-effective manner, leading to a smoother inventory flow.
 
 
-## Streamlit
+## Recommendation System
+
+The recommendation system consists of two components, designed to enhance the customer experience and increase sales by providing personalized suggestions based on product similarity, customer purchase history, and association rules for frequently bought together products.
+
+1. **Customer Purchase History-Based Recommendations**
+
+This part of the recommendation system suggests products to customers based on their past purchase behavior. It uses a **customer-product matrix** to identify products frequently bought by the customer and recommends them.
+
+2. **Product Similarity-Based Recommendations**
+
+This part of the system recommends products based on their similarity to the ones selected by the customer. It uses Cosine Similarity to measure how similar products are in terms of features such as *category, product line, size, weight, gender, pack size and price*.
+
+### System Benefits
+
+- **Personalized Recommendations:** The system tailors product suggestions based on both customer behavior and product similarity, improving the customer shopping experience.
+
+- **Increased Sales:** By recommending related products, both similar and complementary, the system encourages customers to purchase additional items, increasing the average order value.
+
+- **Customer Retention:** Personalized recommendations based on historical purchases and similar product suggestions help build customer loyalty and improve retention rates.
+
+
+## Streamlit Application Overview
+
+This project includes an interactive Streamlit dashboard that allows you to explore different aspects of the system. It provides real-time insights into product availability, recommendations, stock levels, and optimized retrieval paths for warehouse management. The dashboard consists of four main tabs:
+
+1. **Home:** 
+    The landing page of the application, offering an introduction to the project's objectives and features.
+
+2. **Pick-up Products:**
+    Here, you can input the products you want to pick up and specify the quantities. The application will check if those products are available, display their locations in the warehouse, and calculate the most efficient retrieval route.
+
+3. **Product Location Finder:**
+    This tab allows you to input product names to see where they are located in the warehouse.
+
+4. **Product Recommendations:**
+    Based on your selection, the system recommends products in two different ways:
+        - Customer History-based: Suggest products frequently bought by the customer.
+        - Product Similarity-based: Suggest similar products using cosine similarity.
+
 
 ## PowerBI
 
