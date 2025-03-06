@@ -4,16 +4,7 @@ from pulp import LpProblem, LpVariable, LpMinimize, lpSum, LpStatus, value
 from sklearn.metrics.pairwise import cosine_similarity
 from mlxtend.frequent_patterns import apriori, association_rules
 
-st.markdown(
-    """
-    <style>
-        
-        .st-at { color: #007bff !important; }
-        .st-dx { background-color: #007bff !important; }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+
 
 
 def recomendar_productos_cliente(client_id, customer_product_matrix, customer_sim_df, top_n=5, top_n_clientes=5):
@@ -113,16 +104,16 @@ def distancia_origen(i, productos_seleccionados):
 def pickup_products(productos_a_recoger, df_slots):
     productos_disponibles = df_slots[df_slots['ProductName'].isin(productos_a_recoger.keys())]
 
-    productos_disponibles['CantidadRecoger'] = productos_disponibles['ProductName'].apply(
+    productos_disponibles['QuantityPickUp'] = productos_disponibles['ProductName'].apply(
         lambda row: min(productos_a_recoger.get(row, 0), 
                         productos_disponibles.loc[productos_disponibles['ProductName'] == row, 'Stock'].values[0])
     )
 
     # Actualizar stock
     for index, row in productos_disponibles.iterrows():
-        df_slots.loc[df_slots['ProductName'] == row['ProductName'], 'Stock'] -= row['CantidadRecoger']
+        df_slots.loc[df_slots['ProductName'] == row['ProductName'], 'Stock'] -= row['QuantityPickUp']
 
-    productos_ajustados = productos_disponibles[productos_disponibles['CantidadRecoger'] > 0]
+    productos_ajustados = productos_disponibles[productos_disponibles['QuantityPickUp'] > 0]
     
     if productos_ajustados.empty:
         return df_slots, productos_ajustados, [], {}
@@ -223,14 +214,32 @@ rules = association_rules(frequent_items, metric="lift", min_threshold=1.0)
 
 
 
-# **Interfaz Streamlit**
+
+
 st.title("Sales Portal")
 
+
+st.sidebar.image("../images/logo.png", width=300) 
 opcion = st.sidebar.radio("Choose an option", ("Home", "Pick-up products", "Product Location Finder", "Product Recommendations", "Product Replenishment Check"))
 
 if opcion == "Home":
-    st.header("Bienvenido a la página de inicio")
-    st.write("¡Hola!")
+    
+    st.header("Welcome to UnderFit! 🚀")
+    
+    st.write("""
+       Managing inventory efficiently is the key to boosting sales and reducing losses. This app is here to help! Our system predicts reorder point (ROP), optimizes stock levels, 
+       and enhances warehouse organization to streamline operations and maximize profits.""")
+
+    st.header("Explore the Features 🔍")
+    st.markdown("""
+    - 🛒 **Pick-up Products** → Find the most efficient route for collecting products in the warehouse.
+    - 📍 **Product Location Finder** → Instantly locate any product in stock.
+    - 🔄 **Product Recommendations** → Discover tailored suggestions based on purchase history & product similarities.
+    - 📊 **Product Replenishment Check** → Ensure stock availability and monitor key inventory metrics.
+    """)
+
+    st.write("""🚀 Ready to optimize your inventory and maximize sales? Start exploring now! """)
+
 
 elif opcion == "Pick-up products":
     st.subheader('Route Optimisation for Product Pick-up')
@@ -263,7 +272,7 @@ elif opcion == "Pick-up products":
                 df, productos_ajustados, recorrido, productos_seleccionados, total_recorrido = pickup_products(productos_a_recoger, df)
                 
                 st.write("Selected Products:")
-                st.dataframe(productos_ajustados[['ProductName', 'CantidadRecoger', 'Stock']])
+                st.dataframe(productos_ajustados[['ProductName', 'QuantityPickUp', 'Stock']])
 
                 mostrar_recorrido(recorrido, productos_seleccionados)
                 st.write(f'Minimum distance: {total_recorrido}')

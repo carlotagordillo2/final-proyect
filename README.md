@@ -1,4 +1,4 @@
-# UnderFit 
+# Retail Inventory Optimization with Data Analysis
 
 ![Logo](images/logo_grande.PNG)
 
@@ -8,13 +8,13 @@ Final Proyect about retail at Ironhack.
 
 The objective is to predict the demand for products in a shop to optimise inventory levels and reduce losses due to overstocking or out-of-stocks. In addition, to link the demand for these products with the optimisation of the distribution of these products in the warehouse to optimise the preparation/stocking time and maximise sales. 
 
-**Use Cases**
+**Key Use Cases**
 
-- Improve stock management.
-- Reduce losses due to unsold products.
-- Enhance warehouse efficiency.
-- Increase the average customer ticket. 
-- Building customer loyalty. 
+- Enhance stock management by predicting demand trends.
+- Minimize losses due to unsold products or stockouts.
+- Optimize warehouse operations, including product placement and retrieval.
+- Increase the average order value by suggesting complementary products.
+- Build customer loyalty through personalized recommendations.
 
 
 
@@ -22,11 +22,7 @@ The objective is to predict the demand for products in a shop to optimise invent
 
 ![Kaggle dataset](https://www.kaggle.com/datasets/hserdaraltan/underwear-data-with-11-tables-and-up-to-100k-rows?select=products.csv)
 
-Entity-relationship diagram:
-
-![Entity-relationship diagram](Datasets/diagrama_entidad_relacion.png)
-
-In total, is composed of:
+The dataset used in this project was sourced from Kaggle, and it consists of multiple tables related to customer orders, product sales, and customer behavior. The dataset contains:
 
 - 225 customers
 - 4169 products
@@ -34,6 +30,11 @@ In total, is composed of:
 - 105757 sold products
 - €3950215 total sales
 - From 2003 to 2006 order dates
+
+Entity-relationship diagram:
+
+![Entity-relationship diagram](Datasets/diagrama_entidad_relacion.png)
+
 
 
 ## Insights
@@ -362,110 +363,13 @@ This project includes an interactive Streamlit dashboard that allows you to expl
 5. **Product Replenishment Check:**
     This tab checks if there is enough stock for a given product and whether the product has crossed the trigger point for replenishment. Additionally, it provides the security stock, reorder point (ROP), and lead time for that product.
 
-
-
+![Streamlit](images/Streamlit.gif)
 
 
 ## PowerBI
 
 ![Panel](images/Panel.gif)
 
-## Process
-
-### 1. Cleaning
-
-- *8/2/2025*.
-    -  Eliminación de los valores nulos en todos los datasets a excepción de `inventory_transactions` porque al tener tantos valores nulos, quizas pierdo mucha cantidad de ellos. Los valores nulos que tienen son en la cantidad comprada o perdida y muchos de ellos coinciden con los que no tienen registros de compra. 
-    - Unión de datasets como: `Payment Methods` y `Payments`, `Suppliers`y `Purchase Orders` 
-
-### 2. EDA
-
-- *11/2/2025*.
-    - **Estudio clientes.** Demográfico, por ventas, y por fuente de captación. Número de pedidos
-    - **Estudio productos.** Productos y categorías más rentables. Relación costo de envío y el total de ventas por cliente. 
-    - **Estudio ventas.** Total ventas, por categoría. Análisis de venta por tamaño (talla). 
-
-- *13/02/2025*
-    - **Estudio de pagos de clientes**. El retraso de pago se ha calculado como Payment Date - Order Date 
-    Podemos observar que la media de días de retraso de pago es 1.73 días. Además, en media los clientes que pagan anticipadamente gastan más que los que pagan a dias posteriores. 
-
-        **Realizado**
-  
-        - Análisis de los dias de retraso de pago
-        - Análisis del tiempo de entrega
-        - Análisis del número de ofertas por cliente
-        - Análisis del número de ofertas/ tiempo
-        - Mapa de calor de pedidos por dia y mes
-        - Metodos de pago
-
-- *15/02/2025*
-
-    **Realizado**
-
-    - Análisis de stock --> hecho
-    - Estudio del empleado
-    - Análisis de los proveedores
-    - Análisis más exaustivo de los productos
-    - Tendecia de la compra de diversos productos por estación --> tipo en febrero se compran más cosas de invierno
-    
-
-### 3. Forecasting
-- *18/02/2025*
-
-    - series temporales
-        - ventas totales
-        - por categoria
-        - stock
-
-
-- *22/02/2025*
-
-    - series temporales de las ventas totales con distintos metodos
-    - series temporales desagregadas 
-
-
-- *25/02/2025*
-
-    - escoger dos productos de la classification a high demand: 
-        - estudiar lead tiem de cada uno de ellos order date..
-        - hacer la prevision stock.........
-
-- *27/02/2025*  
-
-    - sacar previsiones max/min de cada producto de las clasificaciones ABC - baja/alta demanda
-    - implementacion de las funciones para security_stock
-        - aplicadas a dos productos de high-demand-class-a, donde se ha sacado: lead_time (avg y std), trigger-point, ROP, security-stock
-
-- *01/03/2025*  
-
-    - distribucion del inventario
-    - problema de minimizacion
-    - implementacion de streamlit
-    - powerbi
-
-- *04/03/2025*
-
-    - terminar pestaña powerbi
-    - presentacion
-
-
-### 4. Visualization
-
-
-
-
-
-
-## Time Line
-
-| Tuesday | Thursday | Saturday |
-|-----------|-----------|-----------|
-| 4 - Incio  | 6 - Búsqueda dataset  | 8 - Limpieza   |
-| 11 - EDA   | 13 - EDA   | 15 - EDA    |
-| 18 - Forecast  | 20 - Forecast | 22 - Forecast |
-| 25 - Forecast  | 27 - Forecast  | 1 -  Distribution in the warehouse |
-| 4 - terminar powerbi + presentacion  | 6 - presentacion   | 8 - preparar presentacion  |
-| 11 - **Presentacion**  | 13 - **Presentacion**  | 15 - **Presentacion**  |
 
 ## Project Structure 📁
 - `datasets/`: contains all clean and original datasets used in this proyect
@@ -474,5 +378,22 @@ This project includes an interactive Streamlit dashboard that allows you to expl
     - `eda.ipynb`: jupyter notebook use to do eda
     - `aux_functions.py`: python file where are useful functions were used in other jupyter notebooks
 
+- `images/`: contains all visualizations using in the README.
+-`ML/`: 
+    - `aux_functions_ml.py`: python file where are useful functions were used in other jupyter notebooks that are at this folder.
+    - `classificationABC.ipynb`: jupyter notebook where  the abc classification and the high and low demand of the products were carried out.
+    - `desaggregate_forecast.ipynb`: jupyter notebook where the forecast for each product were carried out.
+    - `forecast_ARIMA_PROPHET.ipynb`: jupyer notebook where the forecast were carried out. 
+    - `forecast_FINAL.ipynb`: jupyter notebook where the forecast were carried out. 
+    - `minimize_problem.ipynb`: jupyter notebook where the minimization problem were carried out. 
+    - `prediction_each_classification.ipynb`: jupyter notebook where it has visualization from *desaagregate_forecast.ipynb* result
+    - `sales_portal.py`: python file with streamlit app
+    - `stock_function.ipynb`: jupyter notebook to calculate *lead time*, *stock security* and *reorder point*
+    - `system_recommendation.ipynb`: jupyter notebook where the recommendations were carried out. 
+    - `warehouse_distribution.ipynb`: jupyer notebook used to distribute products in the warehouse. 
 
+- `Visualization/`: 
+    - `panel.pbix`: PowerBI panel. 
+
+- `presentation.pdf`
 
