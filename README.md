@@ -81,9 +81,9 @@ In total, is composed of:
 - **Top-Selling Products:**
     - The most sold products are also the highest revenue generators.
 - **Highest Profit Margin Categories:**
-    -*Cuff-Over the Calf* (43.57%) -> Least sold (only in winter)
-    -*Regular-Over the Calf* (43.07%) -> but just have 3100 sales
-    -*Thongs* (35.29%) and *Undershirts* (35.21%) -> High Sales & profitability.
+    - *Cuff-Over the Calf* (43.57%) -> Least sold (only in winter)
+    - *Regular-Over the Calf* (43.07%) -> but just have 3100 sales
+    - *Thongs* (35.29%) and *Undershirts* (35.21%) -> High Sales & profitability.
 
 - **Products with Negative Margins (Should Be Discontinued)**:
 
@@ -358,6 +358,12 @@ This project includes an interactive Streamlit dashboard that allows you to expl
     Based on your selection, the system recommends products in two different ways:
         - Customer History-based: Suggest products frequently bought by the customer.
         - Product Similarity-based: Suggest similar products using cosine similarity.
+
+5. **Product Replenishment Check:**
+    This tab checks if there is enough stock for a given product and whether the product has crossed the trigger point for replenishment. Additionally, it provides the security stock, reorder point (ROP), and lead time for that product.
+
+
+
 
 
 ## PowerBI
