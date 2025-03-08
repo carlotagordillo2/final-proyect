@@ -371,6 +371,33 @@ This project includes an interactive Streamlit dashboard that allows you to expl
 ![Panel](images/Panel.gif)
 
 
+## Conclusions
+
+This project has demonstrated how inventory optimisation and data analysis can significantly improve stock management and profitability in the retail sector. The main conclusions obtained are highlighted below:
+
+1. **Demand forecasting and inventory optimisation**:
+The implementation of forecasting models such as Prophet allowed accurate prediction of weekly sales, facilitating better inventory planning.
+ABC classification together with demand segmentation allowed the identification of the most critical products to keep in stock, optimising inventory investment.
+The introduction of Safety Stock and Reorder Point (ROP) ensures the availability of key products, reducing the risk of stock-outs.
+
+2. **Customer analysis and buying patterns**:
+The majority of customers are repeat buyers, indicating a loyal customer base and opportunities for loyalty strategies.
+Customers who pay in advance tend to spend more, suggesting that offering incentives for prepayment could increase sales.
+Advertising and head office referrals are the main customer acquisition channels, justifying investments in these strategies.
+
+3. **Warehouse optimisation and operational efficiency**:
+The organisation of the warehouse by clustering and analysing frequently purchased products together allows for a reduction of picking times.
+The formulation of a route optimisation problem for picking products within the warehouse improves logistical efficiency and reduces operational costs.
+
+4. **Impact on profitability**:
+We identify products with negative margins that should be removed from the catalogue to avoid unnecessary losses.
+Products with higher margins and high demand should be prioritised in the inventory and promotions strategy.
+Identifying seasonal patterns in sales (peaks in August-September and February-March) allows us to adjust sourcing and marketing strategies.
+
+5. **Technology implementation and usability**:
+The Streamlit platform provides an intuitive interface to visualise real-time data, optimise picking routes and obtain product recommendations.
+Integration with Power BI enables dynamic analysis of sales and trends in real time, facilitating data-driven decision making.
+
 ## Project Structure 📁
 - `datasets/`: contains all clean and original datasets used in this proyect
 - `EDA/`:
