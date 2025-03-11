@@ -20,7 +20,7 @@ The objective is to predict the demand for products in a shop to optimise invent
 
 ## Data Sources
 
-![Kaggle dataset](https://www.kaggle.com/datasets/hserdaraltan/underwear-data-with-11-tables-and-up-to-100k-rows?select=products.csv)
+Kaggle dataset: https://www.kaggle.com/datasets/hserdaraltan/underwear-data-with-11-tables-and-up-to-100k-rows?select=products.csv
 
 The dataset used in this project was sourced from Kaggle, and it consists of multiple tables related to customer orders, product sales, and customer behavior. The dataset contains:
 
